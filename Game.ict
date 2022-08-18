@@ -1,0 +1,8945 @@
+ctjsVersion: 2.0.2
+notes: /* empty */
+libs:
+  place:
+    gridX: 1024
+    gridY: 1024
+  pointer: {}
+  keyboard.polyfill: {}
+  keyboard: {}
+  fittoscreen:
+    mode: fastScale
+  sound.howler:
+    defaultMaxDistance: 2500
+    useDepth: false
+    manageListenerPosition: true
+textures:
+  - lastmod: 1658910331924
+    type: texture
+    name: Spikes
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: igtc7nrLnjmDKPJ.png
+    shape: rect
+    left: 0
+    right: 64
+    top: -30
+    bottom: 64
+    uid: gtc7nrLnjmDKPJ
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/linux64/examples/Platformer_assets/Spikes.png
+  - lastmod: 1659443562892
+    type: texture
+    name: Rocks_Top
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: inDkLJq5c9Bbtzj.png
+    shape: rect
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: nDkLJq5c9Bbtzj
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/linux64/examples/Platformer_assets/Rocks_Top.png
+  - lastmod: 1659687972391
+    type: texture
+    name: Rocks_Platform
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 40
+    width: 64
+    height: 40
+    offx: 0
+    offy: 0
+    origname: iqrbPb5z8MDQkK3.png
+    shape: rect
+    left: 0
+    right: 64
+    top: 0
+    bottom: 30
+    uid: qrbPb5z8MDQkK3
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/linux64/examples/Platformer_assets/Rocks_Platform.png
+  - lastmod: 1659687863731
+    type: texture
+    name: Rocks
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: iQKgzWJjjK14krM.png
+    shape: rect
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: QKgzWJjjK14krM
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/linux64/examples/Platformer_assets/Rocks.png
+    ignoreTiledUse: true
+  - lastmod: 1659444476379
+    type: texture
+    name: Platform
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 128
+    imgHeight: 32
+    width: 128
+    height: 32
+    offx: 0
+    offy: 0
+    origname: iq5CQm767MwkPC2.png
+    shape: rect
+    left: 0
+    right: 128
+    top: 0
+    bottom: 32
+    uid: q5CQm767MwkPC2
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/linux64/examples/Platformer_assets/Platform.png
+  - lastmod: 1658910274566
+    type: texture
+    name: Heart
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 32
+      - 32
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: iRdzFWmzrKRLqFF.png
+    shape: circle
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: RdzFWmzrKRLqFF
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/linux64/examples/Platformer_assets/Heart.png
+    r: 14
+  - lastmod: 1659075914804
+    type: texture
+    name: GreenCrystal
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 32
+      - 32
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: iKCD81gdJ8977n3.png
+    shape: circle
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: KCD81gdJ8977n3
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/linux64/examples/Platformer_assets/GreenCrystal.png
+    r: 15
+  - lastmod: 1659429243707
+    type: texture
+    name: exit_open
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: iRp7ntGfRMWBJHP.png
+    shape: rect
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: Rp7ntGfRMWBJHP
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/linux64/examples/Platformer_assets/Exit.png
+  - lastmod: 1659081944069
+    type: texture
+    name: DieBlock
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: i5KD3PnCMBB8HQG.png
+    shape: rect
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: 5KD3PnCMBB8HQG
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/platformPack_tile030.png
+  - lastmod: 1659011335826
+    type: texture
+    name: BG
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 256
+    imgHeight: 256
+    width: 256
+    height: 256
+    offx: 0
+    offy: 0
+    origname: if68hP83H5W7M7d.png
+    shape: rect
+    left: 0
+    right: 256
+    top: 0
+    bottom: 256
+    uid: f68hP83H5W7M7d
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/linux64/examples/Platformer_assets/BG.png
+    ignoreTiledUse: true
+    tiled: true
+  - lastmod: 1659444084392
+    type: texture
+    name: Katya_stay
+    untill: 0
+    grid:
+      - 10
+      - 1
+    axis:
+      - 27
+      - 104
+    marginx: 0
+    marginy: 0
+    imgWidth: 651
+    imgHeight: 110
+    width: 65
+    height: 107
+    offx: -1
+    offy: 0
+    origname: i5njkLMzKDnWTrj.png
+    shape: rect
+    left: 20
+    right: 19
+    top: 87
+    bottom: 0
+    uid: 5njkLMzKDnWTrj
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/row.png
+  - lastmod: 1659097515606
+    type: texture
+    name: Katya_jump
+    untill: 0
+    grid:
+      - 3
+      - 1
+    axis:
+      - 27
+      - 96
+    marginx: 0
+    marginy: 0
+    imgWidth: 651
+    imgHeight: 110
+    width: 65
+    height: 107
+    offx: 0
+    offy: 0
+    origname: i8d7MN59PNFdwFM.png
+    shape: rect
+    left: 20
+    right: 19
+    top: 88
+    bottom: 0
+    uid: 8d7MN59PNFdwFM
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/jump.png
+  - lastmod: 1659509404277
+    type: texture
+    name: Katya_move
+    untill: 0
+    grid:
+      - 10
+      - 1
+    axis:
+      - 27
+      - 104
+    marginx: 0
+    marginy: 0
+    imgWidth: 651
+    imgHeight: 110
+    width: 65
+    height: 104
+    offx: -1
+    offy: 0
+    origname: iftzmQ81N1QL1RW.png
+    shape: rect
+    left: 19
+    right: 20
+    top: 87
+    bottom: 0
+    uid: ftzmQ81N1QL1RW
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/run.png
+  - lastmod: 1659081879191
+    type: texture
+    name: flagRedHanging
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 70
+    imgHeight: 70
+    width: 70
+    height: 70
+    offx: 0
+    offy: 0
+    origname: iGW2Cbm4wFQRPz5.png
+    shape: rect
+    left: 0
+    right: 70
+    top: 0
+    bottom: 70
+    uid: GW2Cbm4wFQRPz5
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/flagRedHanging.png
+  - lastmod: 1659081684097
+    type: texture
+    name: flagAnim
+    untill: 0
+    grid:
+      - 2
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 140
+    imgHeight: 70
+    width: 70
+    height: 70
+    offx: 0
+    offy: 0
+    origname: iL978PqMCDn9WKb.png
+    shape: rect
+    left: 0
+    right: 70
+    top: 0
+    bottom: 70
+    uid: L978PqMCDn9WKb
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/flaganim.png
+  - lastmod: 1659084211459
+    type: texture
+    name: Prince_walk
+    untill: 0
+    grid:
+      - 6
+      - 1
+    axis:
+      - 20
+      - 25
+    marginx: 0
+    marginy: 0
+    imgWidth: 244
+    imgHeight: 52
+    width: 42
+    height: 55
+    offx: 0
+    offy: 0
+    origname: in1WgRdJCWrJmdb.png
+    shape: rect
+    left: 40
+    right: 20
+    top: 50
+    bottom: 50
+    uid: n1WgRdJCWrJmdb
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/prince_walk.png
+  - lastmod: 1659084538325
+    type: texture
+    name: Prince_sit
+    untill: 0
+    grid:
+      - 6
+      - 1
+    axis:
+      - 30
+      - 23
+    marginx: 0
+    marginy: 0
+    imgWidth: 340
+    imgHeight: 54
+    width: 58
+    height: 55
+    offx: 0
+    offy: 0
+    origname: iLLqL2GLf2NwCRh.png
+    shape: rect
+    left: 24
+    right: 20
+    top: 50
+    bottom: 50
+    uid: LLqL2GLf2NwCRh
+    padding: 0
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/prince_sit.png
+  - lastmod: 1660022348062
+    type: texture
+    name: Prince_stay
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 17
+      - 26
+    marginx: 0
+    marginy: 0
+    imgWidth: 32
+    imgHeight: 52
+    width: 32
+    height: 52
+    offx: 0
+    offy: 0
+    origname: iH8TwkDppGwHn22.png
+    shape: rect
+    left: 20
+    right: 20
+    top: 520
+    bottom: 52
+    uid: H8TwkDppGwHn22
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/prince_stay.png
+  - lastmod: 1660107299835
+    type: texture
+    name: rat_run
+    untill: 0
+    grid:
+      - 6
+      - 1
+    axis:
+      - 27
+      - 20
+    marginx: 0
+    marginy: 0
+    imgWidth: 300
+    imgHeight: 22
+    width: 50
+    height: 22
+    offx: 0
+    offy: 1
+    origname: iTwrCkRWKFF8Qnm.png
+    shape: rect
+    left: 15
+    right: 16
+    top: 30
+    bottom: 0
+    uid: TwrCkRWKFF8Qnm
+    padding: 0
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/rat_run.png
+  - lastmod: 1659355290003
+    type: texture
+    name: rat_die
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 15
+      - 26
+    marginx: 0
+    marginy: 0
+    imgWidth: 26
+    imgHeight: 28
+    width: 26
+    height: 28
+    offx: 0
+    offy: 0
+    origname: iFm6PQKKQG5KngJ.png
+    shape: rect
+    left: 15
+    right: 16
+    top: 30
+    bottom: 0
+    uid: Fm6PQKKQG5KngJ
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/rat_die.png
+  - lastmod: 1660105184441
+    type: texture
+    name: sliz_run
+    untill: 0
+    grid:
+      - 4
+      - 1
+    axis:
+      - 39
+      - 64
+    marginx: 0
+    marginy: 0
+    imgWidth: 278
+    imgHeight: 74
+    width: 68
+    height: 68
+    offx: -3
+    offy: 0
+    origname: iz9wBmGRBrPPMrC.png
+    shape: rect
+    left: 29
+    right: 16
+    top: 62
+    bottom: 0
+    uid: z9wBmGRBrPPMrC
+    padding: 2
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/sliz_stay.png
+  - lastmod: 1659346734568
+    type: texture
+    name: sliz_die
+    untill: 0
+    grid:
+      - 4
+      - 1
+    axis:
+      - 34
+      - 59
+    marginx: 0
+    marginy: 0
+    imgWidth: 278
+    imgHeight: 68
+    width: 68
+    height: 62
+    offx: 0
+    offy: 0
+    origname: iD1tNP6PqCJq8d8.png
+    shape: rect
+    left: 31
+    right: 27
+    top: 49
+    bottom: 0
+    uid: D1tNP6PqCJq8d8
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/sliz_die.png
+  - lastmod: 1660021870062
+    type: texture
+    name: sova
+    untill: 0
+    grid:
+      - 6
+      - 1
+    axis:
+      - 51
+      - 69
+    marginx: 0
+    marginy: 0
+    imgWidth: 679
+    imgHeight: 234
+    width: 108
+    height: 89
+    offx: 19
+    offy: 19
+    origname: igmt2K8KPhhckWt.png
+    shape: rect
+    left: 40
+    right: 40
+    top: 59
+    bottom: 30
+    uid: gmt2K8KPhhckWt
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/sova.png
+  - lastmod: 1659426347680
+    type: texture
+    name: sova_die
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 69
+      - 84
+    marginx: 0
+    marginy: 0
+    imgWidth: 137
+    imgHeight: 114
+    width: 86
+    height: 77
+    offx: 27
+    offy: 22
+    origname: iTpNFCKjQKbwJP9.png
+    shape: rect
+    left: 45
+    right: 39
+    top: 58
+    bottom: 0
+    uid: TpNFCKjQKbwJP9
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/sova_die.png
+  - lastmod: 1659357147528
+    type: texture
+    name: ring
+    untill: 29
+    grid:
+      - 8
+      - 4
+    axis:
+      - 32
+      - 32
+    marginx: 0
+    marginy: 0
+    imgWidth: 512
+    imgHeight: 256
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: iJPR525w1pMhj63.png
+    shape: circle
+    left: 0
+    right: 512
+    top: 0
+    bottom: 256
+    uid: JPR525w1pMhj63
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/ring.png
+    r: 27
+  - lastmod: 1659427066932
+    type: texture
+    name: wolf
+    untill: 0
+    grid:
+      - 4
+      - 1
+    axis:
+      - 31
+      - 69
+    marginx: 0
+    marginy: 0
+    imgWidth: 434
+    imgHeight: 93
+    width: 105
+    height: 93
+    offx: 0
+    offy: 0
+    origname: iP391krt5jwTW25.png
+    shape: rect
+    left: 24
+    right: 67
+    top: 62
+    bottom: 0
+    uid: P391krt5jwTW25
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/PC Computer -
+      Ragnarok Online - Desert Wolf.png
+  - lastmod: 1659426608588
+    type: texture
+    name: wolf2
+    untill: 0
+    grid:
+      - 4
+      - 1
+    axis:
+      - 58
+      - 63
+    marginx: 0
+    marginy: 0
+    imgWidth: 487
+    imgHeight: 75
+    width: 118
+    height: 75
+    offx: 0
+    offy: 0
+    origname: ibJ1fW5p9qf18Kp.png
+    shape: rect
+    left: 54
+    right: 54
+    top: 55
+    bottom: 0
+    uid: bJ1fW5p9qf18Kp
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/PC Computer -
+      MapleStory - Servants Wolf.png
+  - lastmod: 1659427215682
+    type: texture
+    name: bear
+    untill: 8
+    grid:
+      - 8
+      - 1
+    axis:
+      - 68
+      - 172
+    marginx: 0
+    marginy: 0
+    imgWidth: 1180
+    imgHeight: 188
+    width: 140
+    height: 188
+    offx: 44
+    offy: 0
+    origname: i7z1T1jFTGfqd1C.png
+    shape: rect
+    left: 55
+    right: 66
+    top: 152
+    bottom: 0
+    uid: 7z1T1jFTGfqd1C
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/288392.png
+  - lastmod: 1659440211712
+    type: texture
+    name: bear_die
+    untill: 0
+    grid:
+      - 3
+      - 1
+    axis:
+      - 79
+      - 185
+    marginx: 0
+    marginy: 0
+    imgWidth: 514
+    imgHeight: 214
+    width: 150
+    height: 214
+    offx: 20
+    offy: 0
+    origname: i41B3L5M3kzMcBT.png
+    shape: rect
+    left: 38
+    right: 65
+    top: 141
+    bottom: 0
+    uid: 41B3L5M3kzMcBT
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/bd.png
+  - lastmod: 1659417225035
+    type: texture
+    name: wolf_die
+    untill: 0
+    grid:
+      - 6
+      - 1
+    axis:
+      - 36
+      - 76
+    marginx: 0
+    marginy: 0
+    imgWidth: 565
+    imgHeight: 95
+    width: 92
+    height: 93
+    offx: 3
+    offy: 0
+    origname: ijbPj7F8T7bg737.png
+    shape: rect
+    left: 27
+    right: 38
+    top: 60
+    bottom: 0
+    uid: jbPj7F8T7bg737
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/wd.png
+  - lastmod: 1659426449892
+    type: texture
+    name: wolf2_die
+    untill: 4
+    grid:
+      - 9
+      - 1
+    axis:
+      - 52
+      - 77
+    marginx: 0
+    marginy: 0
+    imgWidth: 1192
+    imgHeight: 84
+    width: 139
+    height: 84
+    offx: 0
+    offy: 0
+    origname: if3B3NRL5KCFhtj.png
+    shape: rect
+    left: 45
+    right: 70
+    top: 60
+    bottom: 0
+    uid: f3B3NRL5KCFhtj
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/w2d.png
+  - lastmod: 1659427796924
+    type: texture
+    name: pause
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 100
+      - 100
+    marginx: 0
+    marginy: 0
+    imgWidth: 200
+    imgHeight: 200
+    width: 200
+    height: 200
+    offx: 0
+    offy: 0
+    origname: ihjtMtPm7KJbQb2.png
+    shape: rect
+    left: 180
+    right: 180
+    top: 180
+    bottom: 180
+    uid: hjtMtPm7KJbQb2
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/pause.png
+  - lastmod: 1659429262503
+    type: texture
+    name: Exit
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: iq6Fh8RfgN3TBrm.png
+    shape: rect
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: q6Fh8RfgN3TBrm
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/platformPack_tile049.png
+  - lastmod: 1659437972252
+    type: texture
+    name: pom
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 128
+    imgHeight: 128
+    width: 128
+    height: 128
+    offx: 0
+    offy: 0
+    origname: iqChqQRtzR6DkFm.png
+    shape: rect
+    left: 0
+    right: 128
+    top: 0
+    bottom: 128
+    uid: qChqQRtzR6DkFm
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/pom.png
+  - lastmod: 1659443213373
+    type: texture
+    name: waterAnim
+    untill: 0
+    grid:
+      - 8
+      - 2
+    axis:
+      - 6
+      - 13
+    marginx: 0
+    marginy: 0
+    imgWidth: 848
+    imgHeight: 227
+    width: 100
+    height: 105
+    offx: 25
+    offy: 0
+    origname: izJWB3Gc5nhbzGb.png
+    shape: rect
+    left: 0
+    right: 87
+    top: 0
+    bottom: 87
+    uid: zJWB3Gc5nhbzGb
+    padding: 34
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/waterAnim.png
+  - lastmod: 1659513056837
+    type: texture
+    name: shroom
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 34
+      - 70
+    marginx: 0
+    marginy: 0
+    imgWidth: 70
+    imgHeight: 70
+    width: 70
+    height: 70
+    offx: 0
+    offy: 0
+    origname: iTF5J91tTfHQK6G.png
+    shape: rect
+    left: 20
+    right: 20
+    top: 30
+    bottom: 0
+    uid: TF5J91tTfHQK6G
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/tinyShroom_red.png
+  - lastmod: 1659518454683
+    type: texture
+    name: rockMossAlt
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 70
+    imgHeight: 70
+    width: 70
+    height: 70
+    offx: 0
+    offy: 0
+    origname: ir9mdFQN2qT4hFK.png
+    shape: rect
+    left: 0
+    right: 70
+    top: 0
+    bottom: 70
+    uid: r9mdFQN2qT4hFK
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/rockMossAlt.png
+  - lastmod: 1659513627943
+    type: texture
+    name: stoneCaveBR
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 70
+    imgHeight: 70
+    width: 70
+    height: 70
+    offx: 0
+    offy: 0
+    origname: iN2223FDwC8mj8L.png
+    shape: rect
+    left: 0
+    right: 70
+    top: 0
+    bottom: 70
+    uid: N2223FDwC8mj8L
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/stoneCaveBR.png
+  - lastmod: 1659513767541
+    type: texture
+    name: sign
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 35
+      - 70
+    marginx: 0
+    marginy: 0
+    imgWidth: 70
+    imgHeight: 70
+    width: 70
+    height: 70
+    offx: 0
+    offy: 0
+    origname: i51T4p9PQ1wPRW2.png
+    shape: rect
+    left: 35
+    right: 35
+    top: 70
+    bottom: 0
+    uid: 51T4p9PQ1wPRW2
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/sign.png
+  - lastmod: 1659513863623
+    type: texture
+    name: start
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: iW33rhkGcqWB8HH.png
+    shape: rect
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: W33rhkGcqWB8HH
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/platformPack_tile050.png
+  - lastmod: 1660536836851
+    type: texture
+    name: bg
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 1280
+    imgHeight: 448
+    width: 1280
+    height: 448
+    offx: 0
+    offy: 0
+    origname: iQfN4Nt5bW1wdkQ.png
+    shape: rect
+    left: 0
+    right: 1280
+    top: 0
+    bottom: 448
+    uid: QfN4Nt5bW1wdkQ
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/bg.png
+  - lastmod: 1660111786630
+    type: texture
+    name: bg_(копия)
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 448
+    imgHeight: 1280
+    width: 448
+    height: 1280
+    offx: 0
+    offy: 0
+    origname: itCwCpfg1LmPq2B.png
+    shape: rect
+    left: 0
+    right: 448
+    top: 0
+    bottom: 1280
+    uid: tCwCpfg1LmPq2B
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/bg (копия).png
+  - lastmod: 1659594858434
+    type: texture
+    name: cloud
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 272
+    imgHeight: 149
+    width: 272
+    height: 149
+    offx: 0
+    offy: 0
+    origname: in3pQ5kNzB7fzBq.png
+    shape: rect
+    left: 0
+    right: 272
+    top: 0
+    bottom: 149
+    uid: n3pQ5kNzB7fzBq
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/cloud.png
+    ignoreTiledUse: true
+    tiled: true
+  - lastmod: 1659687984730
+    type: texture
+    name: castleRight
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 70
+    imgHeight: 70
+    width: 70
+    height: 70
+    offx: 0
+    offy: 0
+    origname: iK7QGWh3hQNzjg5.png
+    shape: rect
+    left: 0
+    right: 70
+    top: 0
+    bottom: 30
+    uid: K7QGWh3hQNzjg5
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/castleCliffRightAlt.png
+  - lastmod: 1659690092398
+    type: texture
+    name: castleLeft
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 70
+    imgHeight: 70
+    width: 70
+    height: 70
+    offx: 0
+    offy: 0
+    origname: icR2GpPPghnQhTp.png
+    shape: rect
+    left: 0
+    right: 70
+    top: 0
+    bottom: 30
+    uid: cR2GpPPghnQhTp
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/castleCliffLeftAlt.png
+  - lastmod: 1659687838226
+    type: texture
+    name: castleCenter
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 70
+    imgHeight: 70
+    width: 70
+    height: 70
+    offx: 0
+    offy: 0
+    origname: iHq68k7nM5j6z1P.png
+    shape: rect
+    left: 0
+    right: 70
+    top: 0
+    bottom: 70
+    uid: Hq68k7nM5j6z1P
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/castleCenter.png
+  - lastmod: 1659690622162
+    type: texture
+    name: bg_castle
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 256
+    imgHeight: 256
+    width: 256
+    height: 256
+    offx: 0
+    offy: 0
+    origname: ij4MDWzfbWL1gHw.png
+    shape: rect
+    left: 0
+    right: 256
+    top: 0
+    bottom: 256
+    uid: j4MDWzfbWL1gHw
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/bg_castle.png
+    ignoreTiledUse: true
+    tiled: true
+  - lastmod: 1659688202330
+    type: texture
+    name: castleMid
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 70
+    imgHeight: 70
+    width: 70
+    height: 70
+    offx: 0
+    offy: 0
+    origname: i6NzRrw1Bb8dpFj.png
+    shape: rect
+    left: 0
+    right: 70
+    top: 0
+    bottom: 70
+    uid: 6NzRrw1Bb8dpFj
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/castleMid.png
+  - lastmod: 1659689867519
+    type: texture
+    name: castleHalf
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 70
+    imgHeight: 70
+    width: 70
+    height: 70
+    offx: 0
+    offy: 0
+    origname: iFPP1pjj569Qtnn.png
+    shape: rect
+    left: 0
+    right: 70
+    top: 0
+    bottom: 20
+    uid: FPP1pjj569Qtnn
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/castleHalf.png
+  - lastmod: 1659690131051
+    type: texture
+    name: fire
+    untill: 0
+    grid:
+      - 2
+      - 1
+    axis:
+      - 5
+      - 1
+    marginx: 0
+    marginy: 0
+    imgWidth: 86
+    imgHeight: 70
+    width: 42
+    height: 70
+    offx: 0
+    offy: 0
+    origname: ij41tmKJggK2njT.png
+    shape: rect
+    left: 0
+    right: 36
+    top: 0
+    bottom: 30
+    uid: j41tmKJggK2njT
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/fire.png
+  - lastmod: 1660027868983
+    type: texture
+    name: bat_die
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 23
+      - 28
+    marginx: 0
+    marginy: 0
+    imgWidth: 50
+    imgHeight: 40
+    width: 50
+    height: 40
+    offx: 0
+    offy: 0
+    origname: ikdKc2ttQmCjLr9.png
+    shape: rect
+    left: 20
+    right: 20
+    top: 23
+    bottom: 0
+    uid: kdKc2ttQmCjLr9
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/bat_die.png
+  - lastmod: 1660709500355
+    type: texture
+    name: bat
+    untill: 0
+    grid:
+      - 4
+      - 2
+    axis:
+      - 33
+      - 50
+    marginx: 0
+    marginy: 0
+    imgWidth: 256
+    imgHeight: 144
+    width: 64
+    height: 60
+    offx: 0
+    offy: 4
+    origname: iD7BqqbqhjB9Jpm.png
+    shape: rect
+    left: 10
+    right: 10
+    top: 40
+    bottom: 0
+    uid: D7BqqbqhjB9Jpm
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/bat.png
+  - lastmod: 1660020361893
+    type: texture
+    name: activeBlock
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: iRGrL7bWG4KmQdg.png
+    shape: rect
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: RGrL7bWG4KmQdg
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/platformPack_tile036.png
+  - lastmod: 1660027601664
+    type: texture
+    name: skelet
+    untill: 0
+    grid:
+      - 9
+      - 1
+    axis:
+      - 27
+      - 8
+    marginx: 0
+    marginy: 0
+    imgWidth: 880
+    imgHeight: 204
+    width: 104
+    height: 194
+    offx: 0
+    offy: 0
+    origname: id53h223WMMTN9D.png
+    shape: rect
+    left: 25
+    right: 25
+    top: 0
+    bottom: 180
+    uid: d53h223WMMTN9D
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/skelet.png
+  - lastmod: 1660535422943
+    type: texture
+    name: bg_shroom
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 1024
+    imgHeight: 512
+    width: 1024
+    height: 512
+    offx: 0
+    offy: 0
+    origname: ir5BbCFJHN6h64q.png
+    shape: rect
+    left: 0
+    right: 1024
+    top: 0
+    bottom: 512
+    uid: r5BbCFJHN6h64q
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/bg_shroom.png
+    tiled: true
+  - lastmod: 1660709545730
+    type: texture
+    name: fireball
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 35
+      - 35
+    marginx: 0
+    marginy: 0
+    imgWidth: 70
+    imgHeight: 70
+    width: 70
+    height: 70
+    offx: 0
+    offy: 0
+    origname: iT3jbKP8hhRkrdz.png
+    shape: circle
+    left: 35
+    right: 35
+    top: 35
+    bottom: 35
+    uid: T3jbKP8hhRkrdz
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/fireball.png
+    r: 13
+  - lastmod: 1660712262444
+    type: texture
+    name: boxAlt
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 70
+    imgHeight: 70
+    width: 70
+    height: 70
+    offx: 0
+    offy: 0
+    origname: iRH29f54mh45gfB.png
+    shape: rect
+    left: 0
+    right: 70
+    top: 0
+    bottom: 70
+    uid: RH29f54mh45gfB
+    padding: 1
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /mnt/Disc2/apps/ct.js.v2.0.2.for.linux64/wd-game/using/boxAlt.png
+skeletons: []
+templates:
+  - type: template
+    name: Katya
+    depth: 0
+    oncreate: >-
+      ct.room.player = this;
+
+      this.constSpeed = 4 * ct.delta; // Максимальная скорость движения по
+      горизонтали
+
+      this.speed = this.constSpeed;
+
+      this.jumpSpeed = -9;
+
+      this.gravity = 0.5;
+
+
+      this.hspd = 0; // Горизонтальная скорость
+
+      this.vspd = 0; // Вертикальная скорость
+
+
+      ct.camera.follow = this;
+
+
+      this.animationSpeed = 0.3;
+
+
+      //точка возрождения
+
+      this.savedX = this.x;
+
+      this.savedY = this.y;
+
+
+      this.play();
+
+
+      this.depth=-1;
+
+
+      this.direction=0;
+
+      this.canShoot = false;
+    onstep: |
+      ct.room.kill = false;
+
+      if (ct.actions.Shoot.pressed && this.canShoot === true ) {
+         ct.templates.copy('fireball', this.x, this.y - 50);
+      }
+
+      if (ct.place.occupied(this, this.x, this.y, 'Deadly') ) {
+          PlayerDead(this, ct);
+      }
+      var enemy = ct.place.occupied(this, this.x, this.y, 'Enemy');
+      if (enemy) {
+          if( (enemy.getGlobalPosition().y - this.getGlobalPosition().y) <= enemy.height / 2) {    
+              PlayerDead(this, ct);
+          }
+      }
+
+      if (ct.actions.MoveLeft.down) {
+          this.direction=-180;
+          // Если зажата клавиша A или стрелка влево, то двигаемся влево
+          this.hspd = -this.speed;
+          this.animationSpeed = 0.4;
+          // Назначим анимацию ходьбы и отразим робота влево
+          if (this.tex !== 'Katya_move' && ct.place.occupied(this, this.x, this.y + 1, 'Solid'))  {
+              this.tex = 'Katya_move';
+          }
+          this.scale.x = -1;
+      } else if (ct.actions.MoveRight.down) {
+          this.direction=0;
+          // Если зажата клавиша D или стрелка вправо, то двигаемся вправо
+          this.hspd = this.speed;
+          this.animationSpeed = 0.4;
+          // Назначим анимацию ходьбы и отразим робота вправо
+          if (this.tex !== 'Katya_move'  && ct.place.occupied(this, this.x, this.y + 1, 'Solid')) {
+              this.tex = 'Katya_move';
+          }
+           
+          this.scale.x = 1;    
+      } else {
+          // Если ничего не зажато, то не двигаемся
+          this.hspd = 0;
+          this.animationSpeed = 0.3;
+          // Если есть почва под ногами…
+          if (ct.place.occupied(this, this.x, this.y + 1, 'Solid')) {
+              this.tex = 'Katya_stay';
+          }
+      }
+
+      // Если у робота есть почва под ногами…
+      if (ct.place.occupied(this, this.x, this.y + 1, 'Solid')) {
+          // …и клавиша W зажата…
+          if (ct.actions.Jump.down) {
+              ct.sound.spawn('jump',{volume:0.3});
+              // …то прыгаем!
+              this.vspd = this.jumpSpeed;
+          } else {
+              // Иначе сбрасываем вертикальную скорость, чтобы не оказаться под землёй!
+              this.vspd = 0;
+          }
+      } else {
+          // Если под ногами нет опоры  
+          this.vspd += this.gravity;
+          // Поставим анимацию прыжка!
+          if (this.tex !== 'Katya_jump') {
+              this.tex = 'Katya_jump';
+          }
+      }
+
+      // Движение по горизонтали, пиксель за пикселем
+      for (var i = 0; i < Math.abs(this.hspd); i++) {
+          if (ct.place.free(this, this.x + Math.sign(this.hspd), this.y, 'Solid')) {
+              this.x += Math.sign(this.hspd);
+          } else {
+              break;
+          }
+      }
+      // То же самое, но по вертикали
+      for (var i = 0; i < Math.abs(this.vspd); i++) {
+          if (ct.place.free(this, this.x, this.y + Math.sign(this.vspd), 'Solid')) {
+              this.y += Math.sign(this.vspd);
+          } else {
+              ct.camera.shake = 0.4;
+              break;
+          }
+      }
+    ondraw: ''
+    ondestroy: ''
+    texture: 5njkLMzKDnWTrj
+    visible: true
+    extends:
+      cgroup: Player
+    lastmod: 1660796558217
+    uid: LQkmMFJ13dFGQd
+    playAnimationOnStart: false
+  - type: template
+    name: Rocks
+    depth: 0
+    oncreate: ''
+    onstep: ''
+    ondraw: ''
+    ondestroy: ''
+    texture: QKgzWJjjK14krM
+    visible: true
+    extends:
+      cgroup: Solid
+    lastmod: 1659688236323
+    uid: Hj8zMhjFnktqD5
+  - type: template
+    name: Rocks_Top
+    depth: 0
+    oncreate: ''
+    onstep: ''
+    ondraw: ''
+    ondestroy: ''
+    texture: nDkLJq5c9Bbtzj
+    visible: true
+    extends:
+      cgroup: Solid
+    lastmod: 1659688215449
+    uid: DF38kTwcjpNgHr
+  - type: template
+    name: Rocks_Platform
+    depth: 0
+    oncreate: ''
+    onstep: JumpBlock(this)
+    ondraw: ''
+    ondestroy: ''
+    texture: qrbPb5z8MDQkK3
+    visible: true
+    extends:
+      cgroup: ''
+    lastmod: 1659689740603
+    uid: wLJ43zDJThmrJK
+  - type: template
+    name: Spikes
+    depth: 0
+    oncreate: ''
+    onstep: ''
+    ondraw: ''
+    ondestroy: ''
+    texture: gtc7nrLnjmDKPJ
+    visible: true
+    extends:
+      cgroup: Deadly
+    lastmod: 1659690158465
+    uid: QpwF38mhqpPKD6
+  - type: template
+    name: Checkpoint
+    depth: 0
+    oncreate: ''
+    onstep: |-
+      var player = ct.place.meet(this, this.x, this.y, 'Katya');
+      if (player) {
+          player.savedX = this.x + 32;
+          player.savedY = this.y + 32;
+           
+          
+          if (this.tex !== 'flagAnim')  {
+              this.tex = 'flagAnim';
+              this.animationSpeed = 0.1;
+              ct.sound.spawn('checkpoint',{volume:0.4});
+              this.play();
+          }
+      }
+    ondraw: ''
+    ondestroy: ''
+    texture: GW2Cbm4wFQRPz5
+    visible: true
+    extends: {}
+    lastmod: 1659688288809
+    uid: j7FnfbrKNQ5Mbd
+  - type: template
+    name: Exit
+    depth: 0
+    oncreate: |-
+      ct.room.exit = this
+      this.depth=-2
+    onstep: |-
+      // Существует ли переменная со следующей комнатой?
+      if (ct.room.nextRoom && ct.room.rings == ct.room.countRings) {
+          if (ct.place.meet(this, this.x, this.y, 'Katya')) {
+              ct.sound.spawn('round');
+
+              if(ct.room.crystals == ct.room.crystalsTotal) {
+                  ct.startLives++;
+              }
+
+              // Перейти в другую комнату
+              ct.rooms.switch(ct.room.nextRoom);
+          }
+      }
+    ondraw: ''
+    ondestroy: ''
+    texture: q6Fh8RfgN3TBrm
+    visible: true
+    extends: {}
+    lastmod: 1660134352666
+    uid: pcgg5ML8MtgGmT
+  - type: template
+    name: GreenCrystal
+    depth: 0
+    oncreate: ''
+    onstep: |-
+      if (ct.place.meet(this, this.x, this.y, 'Katya')) {
+          ct.room.crystals ++;
+          ct.emitters.fire('RubinFx', this.x, this.y);
+          ct.sound.spawn('point');
+          this.kill = true;
+      }
+    ondraw: ''
+    ondestroy: ''
+    texture: KCD81gdJ8977n3
+    visible: true
+    extends: {}
+    lastmod: 1660712856427
+    uid: fH1Wckq3N3FHb3
+  - type: template
+    name: CrystalCounter
+    depth: 0
+    oncreate: >-
+      this.text = new PIXI.Text('0 / ' + ct.room.crystalsTotal,
+      ct.styles.get('CrystalStyle'));
+
+      this.text.x = 32;
+
+      this.text.anchor.y = 0.5;
+
+
+      this.addChild(this.text);
+    onstep: ''
+    ondraw: |-
+      var offset = 50;
+      this.x = ct.camera.x + ct.room.x + offset;
+      this.y = ct.camera.y + ct.room.y + offset+10;
+
+      this.text.text = ct.room.crystals + ' / ' + ct.room.crystalsTotal;
+    ondestroy: ''
+    texture: KCD81gdJ8977n3
+    visible: true
+    extends: {}
+    lastmod: 1660017845250
+    uid: 23zbNdG4pdGLC3
+  - type: template
+    name: Heart
+    depth: 0
+    oncreate: ''
+    onstep: |-
+      if (ct.place.meet(this, this.x, this.y, 'Katya')) {
+          if (ct.room.lives < ct.startLives) {
+              ct.room.lives++;
+              ct.emitters.fire('HearthFX', this.x, this.y);
+              ct.sound.spawn('hearth');
+              this.kill = true;
+          }
+      }
+    ondraw: ''
+    ondestroy: ''
+    texture: RdzFWmzrKRLqFF
+    visible: true
+    extends: {}
+    lastmod: 1660712687222
+    uid: B38N26BpTFhDTB
+  - type: template
+    name: HeartsWidget
+    depth: 0
+    oncreate: |-
+      this.text = new PIXI.Text(ct.room.lives, ct.styles.get('HeartStyle'));
+      this.text.x = + 52;
+      this.text.anchor.y = 0.5;
+      this.text.anchor.x = 1;
+
+      this.addChild(this.text);
+    onstep: this.move();
+    ondraw: |-
+      var offset = 50;
+      this.x = ct.camera.x + ct.room.x + offset;
+      this.y = ct.camera.y + ct.room.y + offset - 20;
+
+      this.text.text = ct.room.lives;
+    ondestroy: ''
+    texture: RdzFWmzrKRLqFF
+    visible: true
+    extends: {}
+    lastmod: 1659955816917
+    uid: H1TdBfKKcmpHTM
+  - type: template
+    name: Platform
+    depth: 0
+    oncreate: this.speed = 2;
+    onstep: >-
+      //столкновение с типом шаблона
+
+      var player = ct.place.meet(this, this.x, this.y, 'Katya');
+
+      if (player) {
+          this.cgroup = undefined;
+      } else {
+          this.cgroup='Solid';
+          player = ct.place.meet(this, this.x, this.y - 1, 'Katya');
+          if (player) {
+              player.x += ct.u.ldx(this.speed, this.direction);
+          }
+      }
+
+
+      //столкновение с группой коллизий
+
+      if (ct.place.occupied(this, this.x + this.speed * ct.delta, this.y,
+      'Solid')) {
+          // Сменить направление
+          if(this.direction == 0){
+              this.direction = 180;
+          } else {
+              this.direction = 0;
+          }
+      }
+
+      this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: q5CQm767MwkPC2
+    visible: true
+    extends:
+      cgroup: ''
+    lastmod: 1660709946388
+    uid: L3gzJkJQP36FQm
+  - type: template
+    name: PauseHint
+    depth: 0
+    oncreate: ''
+    onstep: ''
+    ondraw: ''
+    ondestroy: ''
+    texture: hjtMtPm7KJbQb2
+    visible: true
+    extends: {}
+    lastmod: 1659590876260
+    uid: KN8Lq58GDRGzg2
+  - type: template
+    name: DieBlock
+    depth: 0
+    oncreate: this.visible=false;
+    onstep: this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: 5KD3PnCMBB8HQG
+    visible: true
+    extends:
+      cgroup: Deadly
+    lastmod: 1660019239417
+    uid: KGgzBdHDpT3rdm
+  - type: template
+    name: Prince
+    depth: 0
+    oncreate: |-
+      this.jumpSpeed = -9;
+      this.gravity = 0.5;
+
+      this.hspd = 0; // Горизонтальная скорость
+      this.vspd = 0; // Вертикальная скорость
+
+      this.animationSpeed = 0.15;
+
+      this.isAnimate = true;
+    onstep: >
+      this.speed = 4 * ct.delta; // Максимальная скорость движения по
+      горизонтали
+
+
+      if (!ct.place.meet(this, this.x, this.y, 'Katya')) {
+          this.isAnimate = true;
+          //двигаемся влево
+          this.hspd = -this.speed;
+          if (this.tex !== 'Prince_walk')  {
+              this.tex = 'Prince_walk';
+          } 
+      } else {
+          this.hspd = 0;
+          this.tex = 'Prince_sit';
+          ct.timer.add(600, 'test').then(() => {
+              this.isAnimate = false;
+              this.stop()
+              ct.room.merryText.visible=true;
+          })
+      }
+
+
+      if( this.isAnimate == true ) {
+       this.play(); 
+      }
+
+       
+      // Движение по горизонтали, пиксель за пикселем
+
+      for (var i = 0; i < Math.abs(this.hspd); i++) {
+           this.x += Math.sign(this.hspd); 
+          if (ct.place.free(this, this.x + Math.sign(this.hspd), this.y, 'Solid')) {
+            
+          } else {
+              break;
+          }
+      }
+    ondraw: ''
+    ondestroy: ''
+    texture: H8TwkDppGwHn22
+    visible: true
+    extends:
+      cgroup: Solid
+    lastmod: 1660022376754
+    uid: RmRT57B8QcnJ9B
+  - type: template
+    name: MerryText
+    depth: 0
+    oncreate: >-
+      this.text = new PIXI.Text('Are you merry me?',
+      ct.styles.get('HeartStyle'));
+
+      this.text.x = + 52;
+
+      this.text.anchor.y = 0.5;
+
+      this.text.anchor.x = 1;
+
+
+      this.addChild(this.text);
+
+      this.visible=false;
+
+
+      ct.room.merryText = this;
+    onstep: this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: -1
+    visible: true
+    extends: {}
+    lastmod: 1659702091675
+    uid: GFcKpKMjHgpwT2
+  - type: template
+    name: sliz
+    depth: 0
+    oncreate: |-
+      this.speed = 1;
+      this.direction = -180;
+
+      this.animationSpeed = 4 / 60;
+      this.play();
+    onstep: >
+      var freeBelow = ct.place.free(this, this.x + ct.u.ldx(70, this.direction),
+      this.y + 35, 'Solid');
+
+
+      var occupiedInFront = ct.place.occupied(this, this.x + ct.u.ldx(7,
+      this.direction), this.y, 'Solid');
+
+
+      if (freeBelow || occupiedInFront) {
+          if (this.direction === 0) {
+              this.direction = 180;
+              this.scale.x = -1;
+          } else {
+              this.direction = 0;
+              this.scale.x = 1;
+          }
+      }
+
+
+
+      var freePlayer = ct.place.free(this, this.x + ct.u.ldx(150,
+      this.direction), this.y, 'Player');
+
+      if(!freePlayer) {
+          if(this.scale.x < 3 || this.scale.y < 3) {
+              this.scale.y+=0.03
+              this.scale.x+=0.03
+              ct.sound.spawn('sliz', {volume:0.1});
+          }
+      } else {
+          if(this.scale.x > 1) {
+              this.scale.x-=0.01
+          }
+
+          if(this.scale.y > 1) {
+              this.scale.y-=0.01
+          }
+      }
+
+
+      EnemyKill(this, ct, 'sliz_die')
+
+
+      this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: z9wBmGRBrPPMrC
+    visible: true
+    extends:
+      cgroup: Enemy
+    lastmod: 1660107372820
+    uid: BP6Qk1937FLdhf
+  - type: template
+    name: rat
+    depth: 0
+    oncreate: |-
+      this.speed = 1;
+
+      this.animationSpeed = 4 / 60;
+      this.play();
+
+      this.isBirth = false;
+      this.countChilds = 0;
+    onstep: >
+      var freeBelow = ct.place.free(this, this.x + ct.u.ldx(70, this.direction),
+      this.y + 35, 'Solid');
+
+
+      var occupiedInFront = ct.place.occupied(this, this.x + ct.u.ldx(7,
+      this.direction), this.y, 'Solid');
+
+
+      if (freeBelow || occupiedInFront) {
+          if (this.direction === 0) {
+              this.direction = 180;
+              this.scale.x = -1;
+          } else {
+              this.direction = 0;
+              this.scale.x = 1;
+          }
+      }
+
+
+      EnemyKill(this, ct, 'rat_die')
+
+
+      this.move();
+
+
+      if (ct.place.meet(this, this.x, this.y, 'rat') 
+          && !this.isBirth && this.countChilds <= 3 
+          && ct.templates.list['rat'].length < 40
+          && ct.room.activeFlags[this.param] == true) {
+          this.isBirth = true;
+          this.countChilds++;
+
+          var child = ct.templates.copy('rat', this.x , this.y);
+          child.speed = 0;
+          child.direction = this.direction;
+          child.scale.x = this.scale.x;
+          child.isBirth = true;
+
+          ct.timer.add(3000, 'birth').then(() => {
+              child.speed = 1.1
+              this.isBirth = false;
+          })
+      }
+    ondraw: ''
+    ondestroy: ''
+    texture: TwrCkRWKFF8Qnm
+    visible: true
+    extends:
+      cgroup: Enemy
+    lastmod: 1660723249842
+    uid: CGbLr36mfWB7mm
+  - type: template
+    name: sova
+    depth: 0
+    oncreate: |-
+      this.speed = 2;
+      this.direction = 180;
+
+      this.animationSpeed = 10 / 60;
+      this.play();
+    onstep: >
+      var occupiedInFront = ct.place.occupied(this, this.x + ct.u.ldx(7,
+      this.direction), this.y, 'Solid');
+
+
+      if (occupiedInFront) {
+          if (this.direction === 180) {
+              this.direction = 0;
+              this.scale.x = -1;
+          } else {
+              this.direction = -180;
+              this.scale.x = 1;
+          }
+      }
+
+
+      EnemyKill(this, ct, 'sova_die')
+
+
+      this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: gmt2K8KPhhckWt
+    visible: true
+    extends:
+      cgroup: Enemy
+    lastmod: 1659961943788
+    uid: n1PzLTMkdLcKKf
+  - type: template
+    name: ring
+    depth: 0
+    oncreate: ''
+    onstep: |-
+      if (ct.place.meet(this, this.x, this.y, 'Katya')) {
+          ct.room.rings++;
+          if(ct.room.sound && ct.sound.playing(ct.room.sound)) {
+              ct.sound.stop(ct.room.sound)
+          }
+          ct.sound.spawn('ring');
+          this.kill = true;
+          ct.room.exit.tex = 'exit_open';
+      }
+
+      this.play()
+    ondraw: ''
+    ondestroy: ''
+    texture: JPR525w1pMhj63
+    visible: true
+    extends: {}
+    lastmod: 1660796513844
+    uid: Dz4rpRb7tcw4mr
+  - type: template
+    name: RingWidget
+    depth: 0
+    oncreate: >-
+      this.text = new PIXI.Text(ct.room.rings + ' / 4',
+      ct.styles.get('RingStyle'));
+
+      this.text.x = 64;
+
+      this.text.anchor.y = 0.5;
+
+
+      this.addChild(this.text);
+
+      this.play()
+    onstep: ''
+    ondraw: |-
+      var offset = 50;
+      this.x = ct.camera.x + ct.room.x + offset;
+      this.y = ct.camera.y + ct.room.y + offset + 45;
+      this.scale.x = 0.5;
+      this.scale.y = 0.5;
+
+      this.text.text = ct.room.rings +' / 4';
+    ondestroy: ''
+    texture: JPR525w1pMhj63
+    visible: true
+    extends: {}
+    lastmod: 1659702112921
+    uid: nQ8QWKbg8qH3jT
+  - type: template
+    name: bear
+    depth: 0
+    oncreate: |-
+      this.speed = 1.8;
+      this.direction = 180;
+      this.live = 10;
+
+      this.animationSpeed = 7 / 60;
+      this.play();
+    onstep: >
+      var freeBelow = ct.place.free(this, this.x + ct.u.ldx(70, this.direction),
+      this.y + 50, 'Solid');
+
+
+      var occupiedInFront = ct.place.occupied(this, this.x + ct.u.ldx(30,
+      this.direction), this.y, 'Solid');
+
+
+      if (freeBelow || occupiedInFront) {
+           if (this.direction === 180) {
+              this.direction = 0;
+              this.scale.x = -1;
+          } else {
+              this.direction = -180;
+              this.scale.x = 1;
+          }
+      }
+
+
+      var player = ct.place.meet(this, this.x, this.y, 'Katya')
+
+      if (player) {
+          player.vspd = player.jumpSpeed * 1.3;
+          if(ct.room.kill == false && (this.getGlobalPosition().y - player.getGlobalPosition().y) > this.height / 2) {
+                  this.cgroup = undefined;
+                  this.tex = 'bear_die';
+                  ct.sound.spawn('enemy_death');  
+                  ct.sound.spawn('bear_die');
+                  this.live--;
+                  if(this.live <= 5 ) {
+                      this.speed = 3;
+                      this.animationSpeed = 10 / 60;
+                  }
+                  if(this.live <= 0 ) {                
+                      ct.timer.add(500, 'kill').then(() => {
+                         this.kill = true;
+                         var fireballFlag = ct.templates.copy('fireballFlag', this.x - 200, this.y - 100);
+                      })    
+                  } else {
+                      ct.timer.add(500, 'kill').then(() => {
+                          this.cgroup = 'Enemy';
+                          this.tex = 'bear';
+                      })
+                  }
+          }
+      }
+
+
+      var fireball = ct.place.meet(this, this.x, this.y, 'fireball')
+          if (fireball) {
+                  this.cgroup = undefined;
+                  this.tex = 'bear_die';
+                  ct.sound.spawn('enemy_death');  
+                  this.live--;
+                  if(this.live <= 0 ) {
+                      ct.sound.spawn('bear_die');                
+                      ct.timer.add(500, 'kill').then(() => {
+                         this.kill = true;
+                      })    
+                  } else {
+                      ct.timer.add(500, 'kill').then(() => {
+                          this.cgroup = 'Enemy';
+                          this.tex = 'bear';
+                      })
+                  }
+             fireball.kill = true;
+             ct.emitters.fire('fire', fireball.x, fireball.y);
+          } 
+
+      this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: 7z1T1jFTGfqd1C
+    visible: true
+    extends:
+      cgroup: Enemy
+    lastmod: 1660714484364
+    uid: FNc2mpm5D8GcTF
+  - type: template
+    name: wolf2
+    depth: 0
+    oncreate: |-
+      this.speed = 1;
+      this.direction = 180;
+
+      this.animationSpeed = 7 / 60;
+      this.play();
+    onstep: >
+      var freeBelow = ct.place.free(this, this.x + ct.u.ldx(70, this.direction),
+      this.y + 50, 'Solid');
+
+
+      var occupiedInFront = ct.place.occupied(this, this.x + ct.u.ldx(7,
+      this.direction), this.y, 'Solid');
+
+
+      if (freeBelow || occupiedInFront) {
+           if (this.direction === 180) {
+              this.direction = 0;
+              this.scale.x = -1;
+          } else {
+              this.direction = -180;
+              this.scale.x = 1;
+          }
+      }
+
+
+      EnemyKill(this, ct, 'wolf2_die')
+
+
+      this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: bJ1fW5p9qf18Kp
+    visible: true
+    extends:
+      cgroup: Enemy
+    lastmod: 1660710196533
+    uid: q5c9GWNFQLmMtz
+  - type: template
+    name: wolf
+    depth: 0
+    oncreate: |-
+      this.speed = 2.5;
+      this.direction = 180;
+
+      this.animationSpeed = 12 / 60;
+      this.play();
+    onstep: >
+      var freeBelow = ct.place.free(this, this.x + ct.u.ldx(100,
+      this.direction), this.y + 50, 'Solid');
+
+
+      var occupiedInFront = ct.place.occupied(this, this.x + ct.u.ldx(30,
+      this.direction), this.y, 'Solid');
+
+
+      if (freeBelow || occupiedInFront) {
+           if (this.direction === 180) {
+              this.direction = 0;
+              this.scale.x = -1;
+          } else {
+              this.direction = -180;
+              this.scale.x = 1;
+          }
+      }
+
+
+      EnemyKill(this, ct, 'wolf_die')
+
+
+      this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: P391krt5jwTW25
+    visible: true
+    extends:
+      cgroup: Enemy
+    lastmod: 1660021791870
+    uid: w7hf4D6cKDdL9z
+  - type: template
+    name: waterAnim
+    depth: 0
+    oncreate: |-
+      this.animationSpeed = 7 / 60;
+      this.play()
+      this.scale.set(0.75,0.75)
+    onstep: ''
+    ondraw: ''
+    ondestroy: ''
+    texture: zJWB3Gc5nhbzGb
+    visible: true
+    extends:
+      cgroup: Deadly
+    lastmod: 1659688306811
+    uid: crn8m1C86p1f9W
+  - type: template
+    name: shroom
+    depth: 0
+    oncreate: ''
+    onstep: |-
+      var player = ct.place.meet(this, this.x, this.y, 'Katya')
+      if (player) {
+          ct.sound.spawn('shroom');
+          player.y -=10 
+          player.vspd = player.jumpSpeed * 1.3;
+      }
+    ondraw: ''
+    ondestroy: ''
+    texture: TF5J91tTfHQK6G
+    visible: true
+    extends:
+      cgroup: ''
+    lastmod: 1659688403118
+    uid: KKpfPwJf6jm3K1
+    blendMode: normal
+  - type: template
+    name: rockMossAlt
+    depth: 0
+    oncreate: ''
+    onstep: ''
+    ondraw: ''
+    ondestroy: ''
+    texture: r9mdFQN2qT4hFK
+    visible: true
+    extends: {}
+    lastmod: 1660027786477
+    uid: htW4kDWHjbJfNp
+  - type: template
+    name: stoneCaveBR
+    depth: 0
+    oncreate: ''
+    onstep: ''
+    ondraw: ''
+    ondestroy: ''
+    texture: N2223FDwC8mj8L
+    visible: true
+    extends: {}
+    lastmod: 1659688240697
+    uid: 58QcM7mcp7PqhD
+  - type: template
+    name: sign
+    depth: 0
+    oncreate: ''
+    onstep: |-
+      var player = ct.place.meet(this, this.x, this.y, 'Katya')
+      if (player) {
+          if(this.textValue) {
+              this.text = new PIXI.Text(this.textValue, ct.styles.get('infoText'));
+              this.text.x = + 52;
+              this.text.anchor.y = 7;
+              this.text.anchor.x = 0.5;
+
+              this.addChild(this.text);
+          }
+      }
+    ondraw: ''
+    ondestroy: ''
+    texture: 51T4p9PQ1wPRW2
+    visible: true
+    extends: {}
+    lastmod: 1660714209885
+    uid: dLwrd3dDn5BC9H
+  - type: template
+    name: start
+    depth: 0
+    oncreate: this.depth=-2
+    onstep: ''
+    ondraw: ''
+    ondestroy: ''
+    texture: W33rhkGcqWB8HH
+    visible: true
+    extends: {}
+    lastmod: 1660111352268
+    uid: h74jwM4T7bmHdG
+  - type: template
+    name: bgH
+    depth: 0
+    oncreate: ''
+    onstep: ''
+    ondraw: ''
+    ondestroy: ''
+    texture: QfN4Nt5bW1wdkQ
+    visible: true
+    extends:
+      cgroup: Solid
+    lastmod: 1659700422851
+    uid: M31JKrKNktDfzN
+  - type: template
+    name: bgW
+    depth: 0
+    oncreate: ''
+    onstep: ''
+    ondraw: ''
+    ondestroy: ''
+    texture: tCwCpfg1LmPq2B
+    visible: true
+    extends:
+      cgroup: Solid
+    lastmod: 1659700266536
+    uid: r8z1cq9zjLGQ1Q
+  - type: template
+    name: castleCenter
+    depth: 0
+    oncreate: ''
+    onstep: ''
+    ondraw: ''
+    ondestroy: ''
+    texture: Hq68k7nM5j6z1P
+    visible: true
+    extends:
+      cgroup: Solid
+    lastmod: 1659688260665
+    uid: 7zT2TgfRgkdhJK
+  - type: template
+    name: castleLeft
+    depth: 0
+    oncreate: ''
+    onstep: JumpBlock(this)
+    ondraw: ''
+    ondestroy: ''
+    texture: cR2GpPPghnQhTp
+    visible: true
+    extends: {}
+    lastmod: 1659689733153
+    uid: 5t6QtkFJPfDrzG
+  - type: template
+    name: castleRight
+    depth: 0
+    oncreate: ''
+    onstep: JumpBlock(this)
+    ondraw: ''
+    ondestroy: ''
+    texture: K7QGWh3hQNzjg5
+    visible: true
+    extends: {}
+    lastmod: 1660023625701
+    uid: B8TmPjpGkMNmmz
+  - type: template
+    name: castleMid
+    depth: 0
+    oncreate: ''
+    onstep: ''
+    ondraw: ''
+    ondestroy: ''
+    texture: 6NzRrw1Bb8dpFj
+    visible: true
+    extends:
+      cgroup: Solid
+    lastmod: 1659688229468
+    uid: QDDMwN922541zp
+  - type: template
+    name: castleHalf
+    depth: 0
+    oncreate: ''
+    onstep: JumpBlock(this)
+    ondraw: ''
+    ondestroy: ''
+    texture: FPP1pjj569Qtnn
+    visible: true
+    extends: {}
+    lastmod: 1659690134881
+    uid: Wgwf61dNh8gRM2
+  - type: template
+    name: fire
+    depth: 0
+    oncreate: |-
+      this.animationSpeed = 6 / 60;
+      this.play()
+    onstep: ''
+    ondraw: ''
+    ondestroy: ''
+    texture: j41tmKJggK2njT
+    visible: true
+    extends:
+      cgroup: Deadly
+    lastmod: 1660110177189
+    uid: 1tn98j5p4fH7rk
+  - type: template
+    name: bat
+    depth: 0
+    oncreate: |-
+      this.speed = 3;
+      this.direction = 0;
+
+      this.animationSpeed = 10 / 60;
+      this.play();
+    onstep: >
+      var occupiedInFront = ct.place.occupied(this, this.x + ct.u.ldx(7,
+      this.direction), this.y, 'Solid');
+
+
+      if (occupiedInFront) {
+          if (this.direction === 180) {
+              this.direction = 0;
+              this.scale.x = 1;
+          } else {
+              this.direction = -180;
+              this.scale.x = -1;
+          }
+      }
+
+
+      EnemyKill(this, ct, 'bat_die')
+
+
+      this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: D7BqqbqhjB9Jpm
+    visible: true
+    extends:
+      cgroup: Enemy
+    lastmod: 1660027658009
+    uid: f7B8RQTdkGNhG2
+  - type: template
+    name: activeBlock
+    depth: 0
+    oncreate: this.visible=false;
+    onstep: |-
+      if (ct.place.meet(this, this.x, this.y, 'Katya')) {
+          ct.room.activeFlags[this.param] = true;
+      }
+    ondraw: ''
+    ondestroy: ''
+    texture: RGrL7bWG4KmQdg
+    visible: true
+    extends: {}
+    lastmod: 1660724162919
+    uid: znFgKhMfkr1cBk
+  - type: template
+    name: skelet
+    depth: 0
+    oncreate: this.animationSpeed = 19 / 60;
+    onstep: |-
+      var player = ct.place.meet(this, this.x, this.y+100, 'Katya')
+      if (player) {
+         this.play()
+         this.cgroup='Solid'
+
+         player.x += ct.u.ldx(1, this.direction);
+         if (this.rotation >= -0.5 && this.direction == 0) {
+            this.rotation -= 0.015;
+            this.direction = 0;
+         } else { 
+            if(this.rotation <= 0.5) {
+               this.rotation += 0.015;
+               this.direction = 180
+            } else {
+               this.rotation -= 0.015;
+               this.direction = 0;
+            }
+         }   
+      } else {
+
+         if(this.rotation != 0) {
+            if (this.rotation >= 0) {
+               this.rotation -= 0.015;
+            } else { 
+               this.rotation += 0.015;
+            }   
+         }
+      }
+
+       if (ct.actions.Jump.down && player) {
+            this.cgroup=undefined
+            player.vspd = player.jumpSpeed;
+      }
+    ondraw: ''
+    ondestroy: ''
+    texture: d53h223WMMTN9D
+    visible: true
+    extends:
+      cgroup: ''
+    lastmod: 1660709571616
+    uid: rh7MG9T3Mk2HL8
+  - type: template
+    name: fireball
+    depth: 0
+    oncreate: |-
+      this.speed = 7;
+      this.direction = ct.room.player.direction;
+      this.distanceKill=500;
+      ct.sound.spawn('fireball',{volume:0.4});
+    onstep: >
+      this.rotation += 0.2;
+
+      this.y += 0.5;
+
+      this.move()
+
+
+      if(this.x > (ct.room.player.x+this.distanceKill) || this.x <
+      (ct.room.player.x-this.distanceKill)){
+          this.kill = true;
+      }
+
+
+      var occupiedInFront = ct.place.occupied(this, this.x + ct.u.ldx(0,
+      this.direction), this.y, 'Solid');
+
+      if(occupiedInFront) {
+         this.kill = true; 
+         ct.emitters.fire('fire', this.x, this.y);
+      }
+    ondraw: ''
+    ondestroy: ''
+    texture: T3jbKP8hhRkrdz
+    visible: true
+    extends: {}
+    lastmod: 1660724492705
+    uid: JNrNK4NpbgPN5p
+  - type: template
+    name: boxAlt
+    depth: 0
+    oncreate: ''
+    onstep: |
+      if(ct.place.meet(this, this.x, this.y, 'fireball')){
+          this.kill=true;
+      }
+    ondraw: ''
+    ondestroy: ''
+    texture: RH29f54mh45gfB
+    visible: true
+    extends:
+      cgroup: Solid
+    lastmod: 1660712378377
+    uid: TNPcdddP3wnJ83
+  - type: template
+    name: fireballFlag
+    depth: 0
+    oncreate: |-
+      this.scale.x = 2
+      this.scale.y = 2
+    onstep: "this.rotation += 0.05;\nct.emitters.fire('fire',this.x, this.y);\n\nvar player = ct.place.meet(this, this.x, this.y, 'Katya')\nif (player) {\n    player.canShoot = true;\n\n    var sign = ct.templates.copy('sign', this.x, this.y + 100);\n    sign.textValue = '\U0001F608 Для стрельбы \U0001F525 используй ПРОБЕЛ \U0001F608';\n\n    this.kill = true;\n}"
+    ondraw: ''
+    ondestroy: ''
+    texture: T3jbKP8hhRkrdz
+    visible: true
+    extends: {}
+    lastmod: 1660724409600
+    uid: 4PW8h8wK3Pf4CN
+sounds:
+  - name: point
+    uid: 7fLJ5PjRMP1cjn
+    isMusic: false
+    type: sound
+    lastmod: 1659077003042
+    origname: s7fLJ5PjRMP1cjn.mp3
+    poolSize: 5
+  - name: player_death
+    uid: Tckjg9j7CDc42w
+    isMusic: false
+    type: sound
+    lastmod: 1659353177714
+    origname: sTckjg9j7CDc42w.mp3
+  - name: enemy_death
+    uid: TmWhQhQn8gGGM6
+    isMusic: false
+    type: sound
+    lastmod: 1659353386327
+    origname: sTmWhQhQn8gGGM6.mp3
+  - name: round
+    uid: r7gMjWfLtHGrnf
+    isMusic: false
+    type: sound
+    lastmod: 1659353721122
+    origname: sr7gMjWfLtHGrnf.mp3
+  - name: hearth
+    uid: CfHGpRCJ2Tb74d
+    isMusic: false
+    type: sound
+    lastmod: 1659353919263
+    origname: sCfHGpRCJ2Tb74d.mp3
+  - name: jump
+    uid: gtWLMHJ7CB2Jcz
+    isMusic: false
+    type: sound
+    lastmod: 1659354397200
+    origname: sgtWLMHJ7CB2Jcz.mp3
+    poolSize: 5
+  - name: checkpoint
+    uid: bkMngjmkCPMhPj
+    isMusic: false
+    type: sound
+    lastmod: 1659354574161
+    origname: sbkMngjmkCPMhPj.mp3
+  - name: ring
+    uid: wTQr79kTCwt7jD
+    isMusic: false
+    type: sound
+    lastmod: 1659429765673
+    origname: swTQr79kTCwt7jD.mp3
+  - name: bear_die
+    uid: mBQn497rRHctqn
+    isMusic: false
+    type: sound
+    lastmod: 1659439741261
+    origname: smBQn497rRHctqn.mp3
+  - name: shroom
+    uid: TQ3kcn5PPdCWcc
+    isMusic: false
+    type: sound
+    lastmod: 1659512403861
+    origname: sTQ3kcn5PPdCWcc.mp3
+  - name: lvl1
+    uid: WH4t3zGTL8BM3p
+    isMusic: true
+    type: sound
+    lastmod: 1659588182794
+    origname: sWH4t3zGTL8BM3p.mp3
+    poolSize: 10
+  - name: sliz
+    uid: 3NkgHdq8rhkcTP
+    isMusic: false
+    type: sound
+    lastmod: 1659954446397
+    origname: s3NkgHdq8rhkcTP.mp3
+  - name: lvl2
+    uid: gC3pqGmjTJT4t9
+    isMusic: true
+    type: sound
+    lastmod: 1660112302680
+    origname: sgC3pqGmjTJT4t9.mp3
+    poolSize: 10
+  - name: fireball
+    uid: mhb8TKfWKdMBq7
+    isMusic: false
+    type: sound
+    lastmod: 1660710763487
+    origname: smhb8TKfWKdMBq7.mp3
+  - name: lvl3
+    uid: cp7QcWBPpckTcW
+    isMusic: true
+    type: sound
+    lastmod: 1660722855149
+    poolSize: 10
+    origname: scp7QcWBPpckTcW.mp3
+  - name: lvl3_fight
+    uid: NB3WwFCB8MNhmp
+    isMusic: true
+    type: sound
+    lastmod: 1660722889735
+    poolSize: 10
+    origname: sNB3WwFCB8MNhmp.mp3
+  - name: lvl4
+    uid: JBFcjM4tGQDjTn
+    isMusic: true
+    type: sound
+    lastmod: 1660722906247
+    poolSize: 10
+    origname: sJBFcjM4tGQDjTn.mp3
+  - name: dress
+    uid: GdNPNtCqG2BTgm
+    isMusic: true
+    type: sound
+    lastmod: 1660722943434
+    poolSize: 10
+    origname: sGdNPNtCqG2BTgm.mp3
+  - name: lvl5
+    uid: hmqcnp7GhnmgLg
+    isMusic: true
+    type: sound
+    lastmod: 1660794684376
+    poolSize: 10
+    origname: shmqcnp7GhnmgLg.mp3
+  - name: lvl21
+    uid: nwwrQTzhN8LHg9
+    isMusic: true
+    type: sound
+    lastmod: 1660795349090
+    poolSize: 10
+    origname: snwwrQTzhN8LHg9.mp3
+styles:
+  - name: CrystalStyle
+    uid: np9Nn7fDnqMJpN
+    origname: snqMJpN
+    font:
+      family: sans-serif
+      size: 24
+      weight: '600'
+      italic: false
+      halign: left
+      lineHeight: 32
+    fill:
+      type: '1'
+      color: '#00A847'
+      color1: '#2ECC71'
+      color2: '#28B463'
+      gradtype: '1'
+    stroke:
+      color: '#FFFFFF'
+      weight: 5
+    lastmod: 1659423083274
+  - name: HeartStyle
+    uid: tR36mDgFjzH5jJ
+    origname: sjzH5jJ
+    font:
+      family: sans-serif
+      size: 24
+      weight: '600'
+      italic: false
+      halign: left
+      lineHeight: 32
+    fill:
+      type: '0'
+      color: '#E85017'
+    stroke:
+      color: '#FFFFFF'
+      weight: 5
+    lastmod: 1659422974989
+  - name: RingStyle
+    uid: rRjBJMHdHhFmBb
+    origname: sHhFmBb
+    font:
+      family: sans-serif
+      size: 55
+      weight: '600'
+      italic: false
+      halign: left
+      lineHeight: 32
+    fill:
+      type: '0'
+      color: '#CC8100'
+    stroke:
+      color: '#FFFFFF'
+      weight: 5
+    lastmod: 1659423125923
+  - name: infoText
+    uid: tgd6GW3C5J34Pq
+    origname: s5J34Pq
+    font:
+      family: sans-serif
+      size: 30
+      weight: '600'
+      italic: false
+      halign: center
+    stroke:
+      color: '#FFFFFF'
+      weight: 5
+    lastmod: 1659514068972
+rooms:
+  - type: room
+    oncreate: |-
+      this.rings = 0;
+      this.countRings = 1;
+      this.nextRoom = 'Level_02';
+      this.sound='lvl1';
+      ct.sound.stop(this.sound)
+      ct.sound.spawn(this.sound, {volume:0.2})
+      inGameRoomStart(this);
+    onstep: PauseHandler()
+    ondraw: ''
+    onleave: ''
+    gridX: 32
+    gridY: 32
+    width: 1248
+    height: 702
+    name: Level_01
+    backgrounds:
+      - depth: -10
+        texture: f68hP83H5W7M7d
+        extends: {}
+      - depth: 0
+        texture: n3pQ5kNzB7fzBq
+        extends:
+          repeat: no-repeat
+          shiftX: 1800
+          movementX: 1
+          parallaxX: 1.17
+          shiftY: -350
+      - depth: 0
+        texture: n3pQ5kNzB7fzBq
+        extends:
+          repeat: no-repeat
+          scaleX: 0.4
+          shiftX: 700
+          shiftY: 320
+          scaleY: 0.4
+      - depth: 0
+        texture: n3pQ5kNzB7fzBq
+        extends:
+          repeat: no-repeat
+          shiftX: 1000
+          scaleX: 0.8
+          scaleY: 0.8
+          shiftY: -200
+      - depth: 0
+        texture: n3pQ5kNzB7fzBq
+        extends:
+          repeat: no-repeat
+          shiftX: 5000
+      - depth: 0
+        texture: n3pQ5kNzB7fzBq
+        extends:
+          repeat: no-repeat
+          shiftX: 5700
+          shiftY: 100
+      - depth: 0
+        texture: n3pQ5kNzB7fzBq
+        extends:
+          repeat: no-repeat
+          movementX: 0
+          shiftX: 6950
+          shiftY: 500
+      - depth: 0
+        texture: n3pQ5kNzB7fzBq
+        extends:
+          repeat: no-repeat
+          scaleX: 0.7
+          scaleY: 0.7
+          shiftX: 3000
+          shiftY: -120
+      - depth: 0
+        texture: n3pQ5kNzB7fzBq
+        extends:
+          repeat: no-repeat
+          scaleX: 0.6
+          scaleY: 0.6
+          shiftX: 4200
+          shiftY: 300
+    copies:
+      - x: 448
+        'y': 512
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 448
+        'y': 448
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 448
+        'y': 384
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 448
+        'y': 320
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 448
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 448
+        'y': 192
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 192
+        'y': 576
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 192
+        'y': 448
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 256
+        'y': 448
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 320
+        'y': 448
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 448
+        'y': 128
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 320
+        'y': 576
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 448
+        'y': 576
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 384
+        'y': 576
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 64
+        'y': 320
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 128
+        'y': 320
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 192
+        'y': 320
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 256
+        'y': 320
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 256
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 256
+        'y': 192
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 256
+        'y': 128
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 256
+        'y': 64
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 256
+        'y': -128
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 64
+        'y': 64
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 64
+        'y': 128
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 64
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 64
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 192
+        'y': 64
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 192
+        'y': 128
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 192
+        'y': 192
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 192
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 192
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 128
+        'y': 192
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 128
+        'y': 128
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 128
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 384
+        'y': -64
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 448
+        'y': -64
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 512
+        'y': -128
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 576
+        'y': -192
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 640
+        'y': -192
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 704
+        'y': -192
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 768
+        'y': -256
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 832
+        'y': -256
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 896
+        'y': -256
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 960
+        'y': -256
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 1024
+        'y': -256
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 1088
+        'y': -256
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 1152
+        'y': -320
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 1216
+        'y': -384
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 320
+        'y': 416
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 384
+        'y': 256
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 384
+        'y': 490
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 352
+        'y': 416
+        uid: KKpfPwJf6jm3K1
+        exts: {}
+      - x: 416
+        'y': 256
+        uid: KKpfPwJf6jm3K1
+        exts: {}
+      - x: 160
+        'y': 32
+        uid: fH1Wckq3N3FHb3
+        exts: {}
+      - x: 512
+        'y': 704
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 512
+        'y': 672
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 512
+        'y': 640
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 512
+        'y': 608
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 576
+        'y': 704
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 576
+        'y': 672
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 576
+        'y': 640
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 576
+        'y': 608
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 640
+        'y': 704
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 640
+        'y': 672
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 640
+        'y': 640
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 640
+        'y': 608
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 704
+        'y': 704
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 704
+        'y': 672
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 704
+        'y': 640
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 704
+        'y': 608
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 128
+        'y': -0.0
+        uid: htW4kDWHjbJfNp
+        exts: {}
+      - x: 128
+        'y': 64
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 960
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1024
+        'y': 416
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1088
+        'y': 416
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1120
+        'y': 416
+        uid: KKpfPwJf6jm3K1
+        exts: {}
+      - x: 1344
+        'y': 192
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1408
+        'y': 192
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1472
+        'y': 192
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 832
+        'y': 512
+        uid: 58QcM7mcp7PqhD
+        exts: {}
+      - x: 896
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 832
+        'y': 576
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 900
+        'y': 512
+        uid: dLwrd3dDn5BC9H
+        exts:
+          textValue: "Используй отскок от стены! \U0001F483"
+        tx: 0.5
+        ty: 0.5
+      - x: 1600
+        'y': 192
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1664
+        'y': 192
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1664
+        'y': 128
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1600
+        'y': 128
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1664
+        'y': 64
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 768
+        'y': 576
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1536
+        'y': -32
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 1152
+        'y': 192
+        uid: j7FnfbrKNQ5Mbd
+        exts: {}
+      - x: 1152
+        'y': 256
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 2304
+        'y': -96
+        uid: n1PzLTMkdLcKKf
+        exts: {}
+      - x: 1536
+        'y': -256
+        uid: fH1Wckq3N3FHb3
+        exts: {}
+      - x: 1728
+        'y': 128
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1728
+        'y': 192
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1728
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1728
+        'y': 64
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1728
+        'y': 0
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1696
+        'y': -64
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 1728
+        'y': -64
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1792
+        'y': -64
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1984
+        'y': 192
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1920
+        'y': 192
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1856
+        'y': 192
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1792
+        'y': 192
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1888
+        'y': 64
+        uid: fH1Wckq3N3FHb3
+        exts:
+          cgroup: ''
+      - x: 1856
+        'y': -32
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1856
+        'y': 0
+        uid: htW4kDWHjbJfNp
+        exts: {}
+      - x: 2112
+        'y': 192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2176
+        'y': 192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2240
+        'y': 192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2304
+        'y': 192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2368
+        'y': 192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2432
+        'y': 192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2496
+        'y': 192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2560
+        'y': 192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2624
+        'y': 192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2688
+        'y': 192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2272
+        'y': 160
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 2432
+        'y': 128
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 2784
+        'y': 128
+        uid: L3gzJkJQP36FQm
+        exts: {}
+      - x: 2752
+        'y': 192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2816
+        'y': 192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2880
+        'y': 192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2944
+        'y': 192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3008
+        'y': 192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3072
+        'y': 192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3136
+        'y': 192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3200
+        'y': 192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3264
+        'y': 192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3328
+        'y': 192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3392
+        'y': 128
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 3392
+        'y': 192
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 3456
+        'y': 192
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 2080
+        'y': 128
+        uid: j7FnfbrKNQ5Mbd
+        exts: {}
+      - x: 2464
+        'y': 32
+        uid: B38N26BpTFhDTB
+        exts: {}
+      - x: 2048
+        'y': 192
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 2112
+        'y': 192
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 3820
+        'y': 97
+        uid: n1PzLTMkdLcKKf
+        exts: {}
+      - x: 3616
+        'y': 192
+        uid: KKpfPwJf6jm3K1
+        exts: {}
+      - x: 2304
+        'y': 160
+        uid: dLwrd3dDn5BC9H
+        exts:
+          textValue: "\U0001F631 Прячься! \U0001F640"
+        tx: 0.5
+        ty: 0.5
+      - x: 3424
+        'y': 96
+        uid: B38N26BpTFhDTB
+        exts: {}
+      - x: 3584
+        'y': 192
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 3520
+        'y': 192
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 3744
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3744
+        'y': 320
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3584
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3584
+        'y': 320
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3584
+        'y': 384
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3584
+        'y': 448
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3584
+        'y': 512
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3584
+        'y': 576
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3744
+        'y': 384
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3744
+        'y': 448
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3744
+        'y': 512
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3584
+        'y': 640
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3584
+        'y': 704
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3584
+        'y': 768
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3648
+        'y': 768
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 3840
+        'y': 768
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 3904
+        'y': 768
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 3968
+        'y': 768
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4032
+        'y': 768
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4096
+        'y': 768
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4096
+        'y': 768
+        uid: w7hf4D6cKDdL9z
+        exts: {}
+      - x: 4160
+        'y': 768
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4224
+        'y': 768
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4288
+        'y': 768
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4352
+        'y': 768
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4416
+        'y': 768
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4480
+        'y': 768
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4544
+        'y': 768
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4608
+        'y': 768
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4608
+        'y': 768
+        uid: q5c9GWNFQLmMtz
+        exts: {}
+      - x: 3776
+        'y': 768
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4288
+        'y': 544
+        uid: fH1Wckq3N3FHb3
+        exts: {}
+      - x: 4672
+        'y': 736
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4736
+        'y': 736
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4800
+        'y': 736
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4864
+        'y': 736
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4896
+        'y': 736
+        uid: KKpfPwJf6jm3K1
+        exts: {}
+      - x: 4960
+        'y': 544
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 5024
+        'y': 544
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 5152
+        'y': 480
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 5312
+        'y': 544
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 5376
+        'y': 544
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 5536
+        'y': 480
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 5600
+        'y': 480
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 5664
+        'y': 480
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 5728
+        'y': 480
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 5792
+        'y': 480
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 5856
+        'y': 480
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 5792
+        'y': 480
+        uid: w7hf4D6cKDdL9z
+        exts: {}
+      - x: 6016
+        'y': 416
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 6112
+        'y': 384
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 6272
+        'y': 352
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 6336
+        'y': 352
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 6400
+        'y': 352
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 6464
+        'y': 352
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 6240
+        'y': 320
+        uid: n1PzLTMkdLcKKf
+        exts: {}
+      - x: 6464
+        'y': 320
+        uid: fH1Wckq3N3FHb3
+        exts: {}
+      - x: 6528
+        'y': 352
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 6592
+        'y': 352
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 6656
+        'y': 736
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 6656
+        'y': 800
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 6656
+        'y': 864
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 6656
+        'y': 928
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 6656
+        'y': 992
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 6720
+        'y': 1024
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 6784
+        'y': 1024
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 6848
+        'y': 1024
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 6912
+        'y': 1024
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 6976
+        'y': 1024
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 7104
+        'y': 1024
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 7360
+        'y': 1024
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 7424
+        'y': 1024
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 6880
+        'y': 960
+        uid: pcgg5ML8MtgGmT
+        exts: {}
+      - x: 7360
+        'y': 928
+        uid: Dz4rpRb7tcw4mr
+        exts: {}
+      - x: 6688
+        'y': 288
+        uid: j7FnfbrKNQ5Mbd
+        exts: {}
+      - x: 6656
+        'y': 352
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 2432
+        'y': -128
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 1216
+        'y': 192
+        uid: 58QcM7mcp7PqhD
+        exts: {}
+      - x: 1248
+        'y': 256
+        uid: dLwrd3dDn5BC9H
+        exts:
+          textValue: Прыгни на врага сверху чтобы убить ☠️
+        tx: 0.5
+        ty: 0.5
+      - x: 1216
+        'y': 256
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1280
+        'y': 192
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1088
+        'y': -448
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 640
+        'y': -320
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 576
+        'y': -320
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1024
+        'y': -384
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 448
+        'y': -256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1152
+        'y': 320
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1152
+        'y': 384
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1024
+        'y': 512
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 896
+        'y': 576
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1216
+        'y': 320
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1280
+        'y': 320
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1280
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1344
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1408
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1472
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1536
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1600
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1664
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1216
+        'y': 384
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1024
+        'y': 480
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 128
+        'y': 448
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 128
+        'y': 576
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 64
+        'y': 576
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 96
+        'y': 512
+        uid: h74jwM4T7bmHdG
+        exts: {}
+      - x: 3840
+        'y': 128
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3808
+        'y': 160
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3904
+        'y': 128
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3904
+        'y': 192
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3840
+        'y': 192
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3808
+        'y': 288
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3872
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3808
+        'y': 352
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3936
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3872
+        'y': 320
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3808
+        'y': 416
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3840
+        'y': 448
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3808
+        'y': 480
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3872
+        'y': 512
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3840
+        'y': 544
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3808
+        'y': 544
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3520
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3456
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3328
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3264
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3200
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3136
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3072
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3008
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2944
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2880
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2816
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2752
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2688
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2624
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2560
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2496
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2432
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2368
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2304
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2240
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2176
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2112
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2048
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1984
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1920
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1856
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1856
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1792
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3392
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3520
+        'y': 448
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3520
+        'y': 512
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3520
+        'y': 576
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3520
+        'y': 640
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3520
+        'y': 704
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3520
+        'y': 768
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3520
+        'y': 768
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3520
+        'y': 320
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3520
+        'y': 384
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3872
+        'y': 64
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 3744
+        'y': 160
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 3808
+        'y': 224
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3744
+        'y': 224
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 4672
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 4736
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 4800
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 4928
+        'y': 1920
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 4992
+        'y': 1920
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 5056
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 5120
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 5184
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 5248
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 5312
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 5376
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 5504
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 5568
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 5632
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 5696
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 5760
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 5824
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 5952
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 6016
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 6144
+        'y': 1920
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 6208
+        'y': 1920
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 6272
+        'y': 1920
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 6336
+        'y': 1920
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 6400
+        'y': 1920
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 6464
+        'y': 1920
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 6528
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 6592
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 6656
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 6720
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 6784
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 6848
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 6912
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 6976
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 6080
+        'y': 1920
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 5888
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 5440
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 4864
+        'y': 1920
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 4608
+        'y': 1856
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 64
+        'y': 768
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: -384
+        'y': -64
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: -384
+        'y': -1344
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: 64
+        'y': 640
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: -0.0
+        'y': -896
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: 64
+        'y': 192
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2240
+        'y': 320
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: 1216
+        'y': 320
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: 6656
+        'y': 1024
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 6656
+        'y': 1088
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: 7936
+        'y': 256
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: 768
+        'y': 640
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: 1152
+        'y': 448
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1152
+        'y': 512
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1088
+        'y': 512
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1088
+        'y': 448
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 960
+        'y': 576
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1024
+        'y': 576
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1088
+        'y': 576
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1152
+        'y': 576
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: -0.0
+        'y': -1408
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: -192
+        'y': -768
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: 448
+        'y': -320
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 512
+        'y': -320
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 192
+        'y': -128
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 128
+        'y': -128
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 64
+        'y': -128
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: -832
+        'y': -64
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: -832
+        'y': -1344
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: 1344
+        'y': 768
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: 2304
+        'y': 768
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: 3584
+        'y': 832
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: 4800
+        'y': 832
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 4800
+        'y': 768
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 4736
+        'y': 768
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 4672
+        'y': 768
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 4544
+        'y': 1792
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 4544
+        'y': 1728
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 4544
+        'y': 1664
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 4544
+        'y': 1600
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 4544
+        'y': 1536
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 4544
+        'y': 1472
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 1536
+        'y': 192
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1536
+        'y': 192
+        uid: q5c9GWNFQLmMtz
+        exts: {}
+      - x: 3712
+        'y': 704
+        uid: j7FnfbrKNQ5Mbd
+        exts: {}
+      - x: 3712
+        'y': 768
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 128
+        'y': 576
+        uid: LQkmMFJ13dFGQd
+        exts: {}
+      - x: 128
+        'y': -64
+        uid: Hj8zMhjFnktqD5
+        exts:
+          cgroup: ''
+      - x: 192
+        'y': -64
+        uid: Hj8zMhjFnktqD5
+        exts:
+          cgroup: ''
+      - x: 256
+        'y': -64
+        uid: Hj8zMhjFnktqD5
+        exts:
+          cgroup: ''
+      - x: 192
+        'y': -0.0
+        uid: Hj8zMhjFnktqD5
+        exts:
+          cgroup: ''
+      - x: 256
+        'y': 0
+        uid: Hj8zMhjFnktqD5
+        exts:
+          cgroup: ''
+      - x: 1856
+        'y': 64
+        uid: Hj8zMhjFnktqD5
+        exts:
+          cgroup: ''
+      - x: 1920
+        'y': 64
+        uid: Hj8zMhjFnktqD5
+        exts:
+          cgroup: ''
+      - x: 1920
+        'y': 128
+        uid: Hj8zMhjFnktqD5
+        exts:
+          cgroup: ''
+      - x: 64
+        'y': -64
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 64
+        'y': 0
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1856
+        'y': 128
+        uid: Hj8zMhjFnktqD5
+        exts:
+          cgroup: ''
+      - x: 1792
+        'y': 0
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1792
+        'y': 64
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1792
+        'y': 128
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1920
+        'y': 0
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 256
+        'y': 576
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 425
+        'y': 577
+        uid: dLwrd3dDn5BC9H
+        exts:
+          textValue: Нажми R чтобы начать уровень сначала ♻️
+        tx: 0.5
+        ty: 0.5
+      - x: 512
+        'y': 128
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 7043
+        'y': 1024
+        uid: CGbLr36mfWB7mm
+        exts: {}
+      - x: 7168
+        'y': 1024
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 7232
+        'y': 1024
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 350
+        'y': 100
+        uid: dLwrd3dDn5BC9H
+        exts:
+          textValue: Собери все кристаллы на уровне и получишь +1 жизнь в следующем ✅
+        tx: 0.5
+        ty: 0.5
+      - x: 320
+        'y': 96
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 7296
+        'y': 1024
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 7488
+        'y': 96
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: 5728
+        'y': 256
+        uid: B38N26BpTFhDTB
+        exts: {}
+      - x: 6656
+        'y': 1536
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: 3168
+        'y': 1216
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: 1888
+        'y': 1216
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: 7040
+        'y': 1024
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 8320
+        'y': -192
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 8320
+        'y': -128
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 8320
+        'y': -64
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 8320
+        'y': 0
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 8320
+        'y': 64
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 8320
+        'y': 128
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 8320
+        'y': 192
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+    tiles:
+      - depth: -10
+        tiles: []
+        extends: {}
+    extends: {}
+    lastmod: 1660726641059
+    thumbnail: m8BCFHLPQ4nt9n
+    uid: m8BCFHLPQ4nt9n
+    restrictCamera: false
+    restrictMaxX: 450
+    restrictMinX: 450
+    restrictMinY: 200
+    restrictMaxY: 200
+  - type: room
+    oncreate: |-
+      this.rings = 1;
+      this.countRings = 2;
+      this.prevRoom = 'Level_01';
+      this.nextRoom = 'Level_03';
+      this.sound = 'lvl2';
+      ct.sound.stop(this.sound)
+      ct.sound.spawn(this.sound, {volume:0.2})
+      inGameRoomStart(this);
+      this.activeFlags = [];
+      this.soundFlag = true;
+    onstep: >-
+      PauseHandler()
+
+      if(!ct.sound.playing('lvl21') && !ct.sound.playing('lvl2') &&
+      this.soundFlag){
+          this.sound='lvl21';
+          ct.sound.spawn(this.sound, {volume:0.3})
+          this.soundFlag = false;
+      }
+    ondraw: ''
+    onleave: ''
+    gridX: 64
+    gridY: 64
+    width: 1248
+    height: 702
+    name: Level_02
+    backgrounds:
+      - depth: -10
+        texture: j4MDWzfbWL1gHw
+        extends: {}
+    copies:
+      - x: 192
+        'y': 448
+        uid: B8TmPjpGkMNmmz
+        exts: {}
+      - x: 384
+        'y': -592
+        uid: r8z1cq9zjLGQ1Q
+        exts:
+          Depth: -10
+      - x: 320
+        'y': 224
+        uid: 5t6QtkFJPfDrzG
+        exts: {}
+      - x: 320
+        'y': 384
+        uid: 5t6QtkFJPfDrzG
+        exts: {}
+      - x: 320
+        'y': 624
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: 256
+        'y': 624
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: 192
+        'y': 624
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: 128
+        'y': 448
+        uid: QDDMwN922541zp
+        exts: {}
+      - x: 64
+        'y': 448
+        uid: QDDMwN922541zp
+        exts: {}
+      - x: -0.0
+        'y': 448
+        uid: 5t6QtkFJPfDrzG
+        exts: {}
+      - x: -448
+        'y': 688
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: -1728
+        'y': 688
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: 128
+        'y': 624
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: 64
+        'y': 624
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: 0
+        'y': 624
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -64
+        'y': 624
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -128
+        'y': 624
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -192
+        'y': 624
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -256
+        'y': 624
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -320
+        'y': 624
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -384
+        'y': 624
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: 320
+        'y': 64
+        uid: 5t6QtkFJPfDrzG
+        exts: {}
+      - x: 144
+        'y': 144
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: 144
+        'y': -16
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: 144
+        'y': 304
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: 400
+        'y': 304
+        uid: 1tn98j5p4fH7rk
+        exts: {}
+      - x: 400
+        'y': -32
+        uid: 1tn98j5p4fH7rk
+        exts: {}
+      - x: 32
+        'y': 80
+        uid: h74jwM4T7bmHdG
+        exts: {}
+      - x: 320
+        'y': -96
+        uid: 5t6QtkFJPfDrzG
+        exts: {}
+      - x: 144
+        'y': -176
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: 320
+        'y': -256
+        uid: 5t6QtkFJPfDrzG
+        exts: {}
+      - x: 400
+        'y': -352
+        uid: 1tn98j5p4fH7rk
+        exts: {}
+      - x: 144
+        'y': -320
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: -32
+        'y': -368
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: 64
+        'y': -352
+        uid: 1tn98j5p4fH7rk
+        exts: {}
+      - x: -832
+        'y': 400
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: -390
+        'y': 400
+        uid: B8TmPjpGkMNmmz
+        exts: {}
+      - x: -448
+        'y': 400
+        uid: CGbLr36mfWB7mm
+        exts:
+          param: ratsBirth
+      - x: -448
+        'y': 240
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: -704
+        'y': 240
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: -832
+        'y': 240
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: -576
+        'y': 240
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: -832
+        'y': -1040
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: -672
+        'y': 128
+        uid: fH1Wckq3N3FHb3
+        exts:
+          alpha: 0.1
+      - x: -1632
+        'y': 688
+        uid: BP6Qk1937FLdhf
+        exts: {}
+      - x: -768
+        'y': 400
+        uid: CGbLr36mfWB7mm
+        exts:
+          param: ratsBirth
+      - x: -336
+        'y': 400
+        uid: dLwrd3dDn5BC9H
+        exts:
+          textValue: "Осторожно! Мыши плодятся \U0001F63E"
+        tx: 0.5
+        ty: 0.5
+      - x: -4992
+        'y': 672
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: -3712
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -3648
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -3584
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -3520
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -3456
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -3392
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -3328
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -3264
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -3200
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -3136
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -3072
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -3008
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -2944
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -2880
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -2816
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -2752
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -2688
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -2624
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -2560
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -2496
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -2432
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -2368
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -2304
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -2240
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -2176
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -2112
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -2048
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -1984
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -1920
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -1856
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -1792
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -3200
+        'y': 736
+        uid: 1tn98j5p4fH7rk
+        exts: {}
+      - x: -2176
+        'y': 736
+        uid: 1tn98j5p4fH7rk
+        exts:
+          depth: '0'
+      - x: -2048
+        'y': 768
+        uid: L3gzJkJQP36FQm
+        exts: {}
+      - x: -4384
+        'y': 448
+        uid: 1tn98j5p4fH7rk
+        exts: {}
+      - x: -4448
+        'y': 672
+        uid: BP6Qk1937FLdhf
+        exts: {}
+      - x: -4992
+        'y': 608
+        uid: B8TmPjpGkMNmmz
+        exts: {}
+      - x: -5088
+        'y': 544
+        uid: B8TmPjpGkMNmmz
+        exts: {}
+      - x: -5184
+        'y': 480
+        uid: B8TmPjpGkMNmmz
+        exts: {}
+      - x: -5280
+        'y': 416
+        uid: B8TmPjpGkMNmmz
+        exts: {}
+      - x: -5728
+        'y': -160
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: -5056
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -5120
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -5184
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -5248
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -5280
+        'y': 1056
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: -5152
+        'y': -960
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: -5216
+        'y': -448
+        uid: 5t6QtkFJPfDrzG
+        exts: {}
+      - x: -5216
+        'y': -480
+        uid: 1tn98j5p4fH7rk
+        exts: {}
+      - x: -5696
+        'y': -160
+        uid: CGbLr36mfWB7mm
+        exts:
+          param: ratsBirth2
+      - x: -5312
+        'y': -160
+        uid: CGbLr36mfWB7mm
+        exts:
+          param: ratsBirth2
+      - x: -5490
+        'y': -230
+        uid: j7FnfbrKNQ5Mbd
+        exts: {}
+      - x: -5792
+        'y': -160
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: -5856
+        'y': -160
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: -5920
+        'y': -160
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: -6048
+        'y': -160
+        uid: B8TmPjpGkMNmmz
+        exts: {}
+      - x: -5792
+        'y': -96
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: -5856
+        'y': -96
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: -5920
+        'y': -96
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: -5984
+        'y': -96
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: -6048
+        'y': -96
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: -6112
+        'y': -96
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: -6176
+        'y': -96
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: -6368
+        'y': -96
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: -6432
+        'y': -96
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: -6944
+        'y': -896
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: -6290
+        'y': -96
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: -6304
+        'y': -96
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: -6240
+        'y': -96
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: -6496
+        'y': -128
+        uid: B8TmPjpGkMNmmz
+        exts: {}
+      - x: -6496
+        'y': -96
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: -6976
+        'y': -32
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: -6368
+        'y': -288
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: -6368
+        'y': -448
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: -6368
+        'y': -576
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: -6208
+        'y': -640
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: -6048
+        'y': -704
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: -5888
+        'y': -768
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: -384
+        'y': 224
+        uid: znFgKhMfkr1cBk
+        exts:
+          param: ratsBirth
+      - x: -320
+        'y': 288
+        uid: znFgKhMfkr1cBk
+        exts:
+          param: ratsBirth
+      - x: -5216
+        'y': -128
+        uid: znFgKhMfkr1cBk
+        exts:
+          param: ratsBirth2
+      - x: -5280
+        'y': -128
+        uid: znFgKhMfkr1cBk
+        exts:
+          param: ratsBirth2
+      - x: -5984
+        'y': -160
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: -5680
+        'y': -864
+        uid: rh7MG9T3Mk2HL8
+        exts: {}
+      - x: -5800
+        'y': 416
+        uid: rh7MG9T3Mk2HL8
+        exts: {}
+      - x: -5936
+        'y': -784
+        uid: f7B8RQTdkGNhG2
+        exts: {}
+      - x: -5440
+        'y': -864
+        uid: rh7MG9T3Mk2HL8
+        exts: {}
+      - x: -5280
+        'y': -784
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: -5712
+        'y': -944
+        uid: htW4kDWHjbJfNp
+        exts: {}
+      - x: -5472
+        'y': -944
+        uid: htW4kDWHjbJfNp
+        exts: {}
+      - x: -4816
+        'y': -1024
+        uid: pcgg5ML8MtgGmT
+        exts: {}
+      - x: -7040
+        'y': 336
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: -7104
+        'y': 336
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: -7168
+        'y': 336
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: -7232
+        'y': 336
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: -7296
+        'y': 336
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: -7360
+        'y': 336
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: -7424
+        'y': 336
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: -7488
+        'y': 336
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: -7552
+        'y': 336
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: -6592
+        'y': -928
+        uid: fH1Wckq3N3FHb3
+        exts: {}
+      - x: -6976
+        'y': -64
+        uid: B38N26BpTFhDTB
+        exts: {}
+      - x: -4704
+        'y': -128
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: -4704
+        'y': -960
+        uid: QDDMwN922541zp
+        exts:
+          cgroup: ''
+      - x: -4704
+        'y': -896
+        uid: 7zT2TgfRgkdhJK
+        exts:
+          cgroup: ''
+      - x: -3680
+        'y': -992
+        uid: fH1Wckq3N3FHb3
+        exts: {}
+      - x: -3616
+        'y': -1030
+        uid: j7FnfbrKNQ5Mbd
+        exts: {}
+      - x: -4704
+        'y': -832
+        uid: 7zT2TgfRgkdhJK
+        exts:
+          cgroup: ''
+      - x: -4704
+        'y': -768
+        uid: 7zT2TgfRgkdhJK
+        exts:
+          cgroup: ''
+      - x: -4704
+        'y': -704
+        uid: 7zT2TgfRgkdhJK
+        exts:
+          cgroup: ''
+      - x: -4704
+        'y': -640
+        uid: 7zT2TgfRgkdhJK
+        exts:
+          cgroup: ''
+      - x: -4640
+        'y': -960
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: -4496
+        'y': -400
+        uid: 1tn98j5p4fH7rk
+        exts: {}
+      - x: -4080
+        'y': -400
+        uid: 1tn98j5p4fH7rk
+        exts: {}
+      - x: -3648
+        'y': -400
+        uid: 1tn98j5p4fH7rk
+        exts: {}
+      - x: -4336
+        'y': -128
+        uid: BP6Qk1937FLdhf
+        exts: {}
+      - x: -3424
+        'y': -172
+        uid: QDDMwN922541zp
+        exts: {}
+      - x: -3354
+        'y': -210
+        uid: QDDMwN922541zp
+        exts: {}
+      - x: -3284
+        'y': -248
+        uid: QDDMwN922541zp
+        exts: {}
+      - x: -3214
+        'y': -289
+        uid: QDDMwN922541zp
+        exts: {}
+      - x: -3144
+        'y': -325
+        uid: QDDMwN922541zp
+        exts: {}
+      - x: -3369
+        'y': -1792
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: -3435
+        'y': -1401
+        uid: 5t6QtkFJPfDrzG
+        exts: {}
+      - x: -3434
+        'y': -1443
+        uid: 1tn98j5p4fH7rk
+        exts: {}
+      - x: -3074
+        'y': -352
+        uid: QDDMwN922541zp
+        exts: {}
+      - x: -3008
+        'y': -352
+        uid: QDDMwN922541zp
+        exts: {}
+      - x: -2944
+        'y': -352
+        uid: QDDMwN922541zp
+        exts: {}
+      - x: -2880
+        'y': -352
+        uid: KKpfPwJf6jm3K1
+        exts: {}
+      - x: -3374
+        'y': -112
+        uid: rh7MG9T3Mk2HL8
+        exts: {}
+      - x: -3232
+        'y': -192
+        uid: rh7MG9T3Mk2HL8
+        exts: {}
+      - x: -3088
+        'y': -272
+        uid: rh7MG9T3Mk2HL8
+        exts: {}
+      - x: -2928
+        'y': -1408
+        uid: B8TmPjpGkMNmmz
+        exts: {}
+      - x: -2896
+        'y': -1440
+        uid: 1tn98j5p4fH7rk
+        exts: {}
+      - x: -2438
+        'y': -721
+        uid: rh7MG9T3Mk2HL8
+        exts: {}
+      - x: -2667
+        'y': -611
+        uid: rh7MG9T3Mk2HL8
+        exts: {}
+      - x: -2702
+        'y': -688
+        uid: htW4kDWHjbJfNp
+        exts: {}
+      - x: -2471
+        'y': -797
+        uid: htW4kDWHjbJfNp
+        exts: {}
+      - x: -2254
+        'y': -819
+        uid: rh7MG9T3Mk2HL8
+        exts: {}
+      - x: -2289
+        'y': -895
+        uid: htW4kDWHjbJfNp
+        exts: {}
+      - x: -1920
+        'y': -640
+        uid: QDDMwN922541zp
+        exts: {}
+      - x: -1792
+        'y': -640
+        uid: QDDMwN922541zp
+        exts: {}
+      - x: -1600
+        'y': -640
+        uid: QDDMwN922541zp
+        exts: {}
+      - x: -1536
+        'y': -640
+        uid: QDDMwN922541zp
+        exts: {}
+      - x: -1408
+        'y': -640
+        uid: B8TmPjpGkMNmmz
+        exts: {}
+      - x: -1472
+        'y': -640
+        uid: CGbLr36mfWB7mm
+        exts:
+          param: ratsBirth3
+      - x: -1984
+        'y': -640
+        uid: QDDMwN922541zp
+        exts: {}
+      - x: -2048
+        'y': -640
+        uid: 5t6QtkFJPfDrzG
+        exts: {}
+      - x: -1664
+        'y': -640
+        uid: CGbLr36mfWB7mm
+        exts:
+          param: ratsBirth3
+      - x: -1984
+        'y': -704
+        uid: znFgKhMfkr1cBk
+        exts:
+          param: ratsBirth3
+      - x: -2048
+        'y': -768
+        uid: znFgKhMfkr1cBk
+        exts:
+          param: ratsBirth3
+      - x: -1856
+        'y': -640
+        uid: QDDMwN922541zp
+        exts: {}
+      - x: -1664
+        'y': -640
+        uid: QDDMwN922541zp
+        exts: {}
+      - x: -1472
+        'y': -640
+        uid: QDDMwN922541zp
+        exts: {}
+      - x: -1152
+        'y': -384
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: -1216
+        'y': -384
+        uid: 5t6QtkFJPfDrzG
+        exts: {}
+      - x: -1088
+        'y': -384
+        uid: B8TmPjpGkMNmmz
+        exts: {}
+      - x: -1120
+        'y': -439
+        uid: Dz4rpRb7tcw4mr
+        exts: {}
+      - x: -179
+        'y': -82
+        uid: f7B8RQTdkGNhG2
+        exts: {}
+      - x: -5061
+        'y': 417
+        uid: B38N26BpTFhDTB
+        exts: {}
+      - x: -2885
+        'y': -554
+        uid: B38N26BpTFhDTB
+        exts: {}
+      - x: -2744
+        'y': -309
+        uid: f7B8RQTdkGNhG2
+        exts: {}
+      - x: -1728
+        'y': -640
+        uid: CGbLr36mfWB7mm
+        exts:
+          param: ratsBirth3
+      - x: -1728
+        'y': -640
+        uid: QDDMwN922541zp
+        exts: {}
+      - x: 832
+        'y': 1088
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 960
+        'y': 1088
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 896
+        'y': 1088
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 1024
+        'y': 1088
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 1088
+        'y': 1088
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 1152
+        'y': 1088
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 1216
+        'y': 1088
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 1280
+        'y': 1088
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 1408
+        'y': 1088
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 1344
+        'y': 1088
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 1472
+        'y': 1088
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 1536
+        'y': 1088
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 1600
+        'y': 1088
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: 1664
+        'y': 1088
+        uid: KGgzBdHDpT3rdm
+        exts: {}
+      - x: -448
+        'y': 128
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: -448
+        'y': 64
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: -448
+        'y': 0
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: -448
+        'y': -64
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 64
+        'y': -0.0
+        uid: LQkmMFJ13dFGQd
+        exts: {}
+      - x: -896
+        'y': 256
+        uid: B38N26BpTFhDTB
+        exts: {}
+      - x: -895
+        'y': 400
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: -959
+        'y': 400
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: -1023
+        'y': 400
+        uid: 5t6QtkFJPfDrzG
+        exts: {}
+      - x: -1016
+        'y': 331
+        uid: j7FnfbrKNQ5Mbd
+        exts: {}
+      - x: -900
+        'y': 620
+        uid: QDDMwN922541zp
+        exts: {}
+      - x: -3520
+        'y': 768
+        uid: L3gzJkJQP36FQm
+        exts: {}
+      - x: -3648
+        'y': 704
+        uid: B8TmPjpGkMNmmz
+        exts: {}
+      - x: -3712
+        'y': 704
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+    tiles:
+      - depth: -10
+        tiles: []
+        extends: {}
+    extends: {}
+    lastmod: 1660796531106
+    thumbnail: 5g6FF7Wn3WcNb4
+    uid: 5g6FF7Wn3WcNb4
+  - type: room
+    oncreate: |-
+      this.rings = 2;
+      this.countRings = 3;
+      this.prevRoom = 'Level_02';
+      this.nextRoom = 'Level_04';
+      this.sound='lvl3';
+      ct.sound.stop(this.sound)
+      ct.sound.spawn(this.sound, {volume:0.2})
+      inGameRoomStart(this);
+      this.activeFlags = [];
+    onstep: |-
+      PauseHandler()
+
+      if(this.activeFlags['fight'] == true) {
+          ct.sound.stop(this.sound)
+          this.sound='lvl3_fight';
+          ct.sound.spawn(this.sound, {volume:0.3})
+          this.activeFlags['fight'] = false;
+      }
+    ondraw: ''
+    onleave: ''
+    gridX: 0
+    gridY: 0
+    width: 1280
+    height: 720
+    name: Level_03
+    backgrounds:
+      - depth: -10
+        texture: r5BbCFJHN6h64q
+        extends:
+          repeat: repeat
+          scaleX: 1.25
+          scaleY: 1.41
+    copies:
+      - x: -448
+        'y': -576
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: -448
+        'y': 704
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: -704
+        'y': 576
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: 576
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 640
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 704
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 768
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 832
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 512
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 448
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 384
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 320
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 256
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 192
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 128
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 64
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 0
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 896
+        'y': 448
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 896
+        'y': 512
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 960
+        'y': 512
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1024
+        'y': 512
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1088
+        'y': 512
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1152
+        'y': 512
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1152
+        'y': 448
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1216
+        'y': 448
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1280
+        'y': 448
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1344
+        'y': 448
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 960
+        'y': 448
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1024
+        'y': 448
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1088
+        'y': 448
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1152
+        'y': 384
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1216
+        'y': 384
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1280
+        'y': 384
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1344
+        'y': 320
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1408
+        'y': 320
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1344
+        'y': 384
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1472
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1472
+        'y': 192
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1472
+        'y': 128
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1472
+        'y': 320
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1408
+        'y': 384
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1472
+        'y': 384
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1536
+        'y': 192
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1536
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1536
+        'y': 320
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1536
+        'y': 384
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1536
+        'y': 128
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1536
+        'y': 64
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1536
+        'y': 0
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1600
+        'y': -0.0
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1664
+        'y': 0
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1536
+        'y': -64
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1600
+        'y': -64
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1664
+        'y': -64
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1728
+        'y': 0
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1856
+        'y': 0
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1920
+        'y': 0
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1024
+        'y': -64
+        uid: B8TmPjpGkMNmmz
+        exts: {}
+      - x: 576
+        'y': -1152
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: -512
+        'y': -256
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: 64
+        'y': 256
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 128
+        'y': 256
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 192
+        'y': 256
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 256
+        'y': 256
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 320
+        'y': 256
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 384
+        'y': 256
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 448
+        'y': 256
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 512
+        'y': 256
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 576
+        'y': 256
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 640
+        'y': 256
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 704
+        'y': 256
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 832
+        'y': 192
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 896
+        'y': 192
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 960
+        'y': 192
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 1024
+        'y': 192
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 1408
+        'y': 320
+        uid: KKpfPwJf6jm3K1
+        exts: {}
+      - x: 2560
+        'y': -704
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: 1971
+        'y': 0
+        uid: KKpfPwJf6jm3K1
+        exts: {}
+      - x: 903
+        'y': -868
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: 1946
+        'y': -297
+        uid: L3gzJkJQP36FQm
+        exts: {}
+      - x: 1505
+        'y': 129
+        uid: KKpfPwJf6jm3K1
+        exts: {}
+      - x: 1053
+        'y': -92
+        uid: fH1Wckq3N3FHb3
+        exts: {}
+      - x: 2496
+        'y': -128
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 2509
+        'y': -128
+        uid: KKpfPwJf6jm3K1
+        exts: {}
+      - x: 2496
+        'y': -640
+        uid: QpwF38mhqpPKD6
+        exts: {}
+        tr: 180
+      - x: 2560
+        'y': -640
+        uid: QpwF38mhqpPKD6
+        exts: {}
+        tr: 180
+      - x: 2432
+        'y': -640
+        uid: QpwF38mhqpPKD6
+        exts: {}
+        tr: 180
+      - x: 2368
+        'y': -640
+        uid: QpwF38mhqpPKD6
+        exts: {}
+        tr: 180
+      - x: 2304
+        'y': -640
+        uid: QpwF38mhqpPKD6
+        exts: {}
+        tr: 180
+      - x: 2240
+        'y': -640
+        uid: QpwF38mhqpPKD6
+        exts: {}
+        tr: 180
+      - x: 2171
+        'y': -774
+        uid: htW4kDWHjbJfNp
+        exts: {}
+      - x: 2221
+        'y': -773
+        uid: htW4kDWHjbJfNp
+        exts: {}
+      - x: 2273
+        'y': -772
+        uid: htW4kDWHjbJfNp
+        exts: {}
+      - x: 2327
+        'y': -774
+        uid: htW4kDWHjbJfNp
+        exts: {}
+      - x: 2378
+        'y': -774
+        uid: htW4kDWHjbJfNp
+        exts: {}
+      - x: 2430
+        'y': -774
+        uid: htW4kDWHjbJfNp
+        exts: {}
+      - x: 2484
+        'y': -774
+        uid: htW4kDWHjbJfNp
+        exts: {}
+      - x: 2536
+        'y': -773
+        uid: htW4kDWHjbJfNp
+        exts: {}
+      - x: 1600
+        'y': -64
+        uid: CGbLr36mfWB7mm
+        exts: {}
+      - x: 1790
+        'y': -1
+        uid: CGbLr36mfWB7mm
+        exts: {}
+      - x: 1792
+        'y': 0
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1792
+        'y': 64
+        uid: rh7MG9T3Mk2HL8
+        exts: {}
+      - x: 1600
+        'y': 320
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 1664
+        'y': 320
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 1728
+        'y': 320
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 1792
+        'y': 320
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 1856
+        'y': 320
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 1664
+        'y': 128
+        uid: fH1Wckq3N3FHb3
+        exts: {}
+      - x: 1984
+        'y': 256
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 1920
+        'y': 64
+        uid: Hj8zMhjFnktqD5
+        exts:
+          cgroup: ''
+      - x: 1920
+        'y': 128
+        uid: Hj8zMhjFnktqD5
+        exts:
+          cgroup: ''
+      - x: 1920
+        'y': 192
+        uid: Hj8zMhjFnktqD5
+        exts:
+          cgroup: ''
+      - x: 1920
+        'y': 320
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1920
+        'y': 256
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 704
+        'y': 128
+        uid: 7zT2TgfRgkdhJK
+        exts: {}
+      - x: 896
+        'y': 448
+        uid: 7zT2TgfRgkdhJK
+        exts: {}
+      - x: 1920
+        'y': 384
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1856
+        'y': 384
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1792
+        'y': 384
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1728
+        'y': 384
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1664
+        'y': 384
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1600
+        'y': 384
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 576
+        'y': 576
+        uid: 7zT2TgfRgkdhJK
+        exts: {}
+      - x: 576
+        'y': 704
+        uid: 7zT2TgfRgkdhJK
+        exts: {}
+      - x: 576
+        'y': 640
+        uid: 7zT2TgfRgkdhJK
+        exts: {}
+      - x: 640
+        'y': 640
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 704
+        'y': 640
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 640
+        'y': 576
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 704
+        'y': 576
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 768
+        'y': 576
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 832
+        'y': 576
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 896
+        'y': 576
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 640
+        'y': 832
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 704
+        'y': 832
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 640
+        'y': 704
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 896
+        'y': 704
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 960
+        'y': 704
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 1024
+        'y': 640
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 1088
+        'y': 640
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 1216
+        'y': 640
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 1152
+        'y': 640
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 1280
+        'y': 576
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 1344
+        'y': 576
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 1472
+        'y': 512
+        uid: QpwF38mhqpPKD6
+        exts: {}
+        tr: 180
+      - x: 1536
+        'y': 512
+        uid: QpwF38mhqpPKD6
+        exts: {}
+        tr: 180
+      - x: 1600
+        'y': 512
+        uid: QpwF38mhqpPKD6
+        exts: {}
+        tr: 180
+      - x: 1664
+        'y': 512
+        uid: QpwF38mhqpPKD6
+        exts: {}
+        tr: 180
+      - x: 1728
+        'y': 512
+        uid: QpwF38mhqpPKD6
+        exts: {}
+        tr: 180
+      - x: 1792
+        'y': 512
+        uid: QpwF38mhqpPKD6
+        exts: {}
+        tr: 180
+      - x: 1856
+        'y': 512
+        uid: QpwF38mhqpPKD6
+        exts: {}
+        tr: 180
+      - x: 1920
+        'y': 512
+        uid: QpwF38mhqpPKD6
+        exts: {}
+        tr: 180
+      - x: 1984
+        'y': 512
+        uid: QpwF38mhqpPKD6
+        exts: {}
+        tr: 180
+      - x: 2368
+        'y': 64
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 2399
+        'y': 65
+        uid: KKpfPwJf6jm3K1
+        exts: {}
+      - x: 2240
+        'y': 128
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 2112
+        'y': 576
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: 2496
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 2432
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 2368
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 2304
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 2240
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 2176
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 2112
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 2048
+        'y': 576
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1984
+        'y': 640
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1920
+        'y': 704
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1856
+        'y': 704
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1792
+        'y': 704
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1728
+        'y': 704
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1664
+        'y': 704
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1600
+        'y': 704
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1536
+        'y': 704
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1472
+        'y': 704
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1408
+        'y': 704
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1344
+        'y': 704
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1280
+        'y': 704
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1600
+        'y': 704
+        uid: w7hf4D6cKDdL9z
+        exts: {}
+      - x: 576
+        'y': 954
+        uid: 7zT2TgfRgkdhJK
+        exts: {}
+      - x: 609
+        'y': 910
+        uid: fH1Wckq3N3FHb3
+        exts: {}
+      - x: 1216
+        'y': 768
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1152
+        'y': 768
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1088
+        'y': 832
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1024
+        'y': 832
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 960
+        'y': 896
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 704
+        'y': 1152
+        uid: KKpfPwJf6jm3K1
+        exts: {}
+      - x: 768
+        'y': 768
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: 512
+        'y': 1024
+        uid: 7zT2TgfRgkdhJK
+        exts:
+          cgroup: ''
+      - x: 512
+        'y': 1088
+        uid: 7zT2TgfRgkdhJK
+        exts:
+          cgroup: ''
+      - x: 512
+        'y': 1152
+        uid: 7zT2TgfRgkdhJK
+        exts: {}
+      - x: 576
+        'y': 1152
+        uid: 7zT2TgfRgkdhJK
+        exts: {}
+      - x: 640
+        'y': 1152
+        uid: B8TmPjpGkMNmmz
+        exts: {}
+      - x: 768
+        'y': 640
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 832
+        'y': 768
+        uid: DF38kTwcjpNgHr
+        exts: {}
+        tr: 180
+      - x: -0.0
+        'y': 1536
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: 384
+        'y': 1024
+        uid: rh7MG9T3Mk2HL8
+        exts: {}
+      - x: 0
+        'y': 1408
+        uid: B8TmPjpGkMNmmz
+        exts: {}
+      - x: 192
+        'y': 1344
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 235
+        'y': 1344
+        uid: KKpfPwJf6jm3K1
+        exts: {}
+      - x: -0.0
+        'y': 1472
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 64
+        'y': 1472
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 128
+        'y': 1472
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 192
+        'y': 1472
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 256
+        'y': 1472
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 320
+        'y': 1472
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 384
+        'y': 1472
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 448
+        'y': 1472
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 512
+        'y': 1472
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 576
+        'y': 1472
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 640
+        'y': 1472
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 704
+        'y': 1472
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 768
+        'y': 1472
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 832
+        'y': 1472
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 896
+        'y': 1472
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 960
+        'y': 1472
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1024
+        'y': 1472
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1088
+        'y': 1472
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1152
+        'y': 1472
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1216
+        'y': 1472
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 576
+        'y': 1472
+        uid: q5c9GWNFQLmMtz
+        exts: {}
+      - x: 70
+        'y': 1094
+        uid: 58QcM7mcp7PqhD
+        exts: {}
+        tr: 180
+      - x: 2048
+        'y': 640
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2048
+        'y': 704
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1984
+        'y': 704
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1280
+        'y': 768
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1344
+        'y': 768
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1472
+        'y': 768
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1408
+        'y': 768
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1600
+        'y': 768
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1536
+        'y': 768
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1664
+        'y': 768
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1728
+        'y': 768
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1792
+        'y': 768
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1920
+        'y': 768
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1856
+        'y': 768
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2048
+        'y': 768
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1984
+        'y': 768
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1152
+        'y': 832
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: 1088
+        'y': 896
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1024
+        'y': 896
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1024
+        'y': 960
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1088
+        'y': 960
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1088
+        'y': 1024
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 1024
+        'y': 1024
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 960
+        'y': 960
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: -896
+        'y': 1024
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: -0.0
+        'y': 1984
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: 1280
+        'y': 2048
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: 2560
+        'y': 2048
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2624
+        'y': 2048
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2688
+        'y': 2048
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2752
+        'y': 2048
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2816
+        'y': 2048
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2880
+        'y': 2048
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2944
+        'y': 2048
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3008
+        'y': 2048
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3072
+        'y': 2048
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3136
+        'y': 2048
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2560
+        'y': 2096
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2624
+        'y': 2096
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2688
+        'y': 2096
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2752
+        'y': 2096
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2816
+        'y': 2096
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2880
+        'y': 2096
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2944
+        'y': 2096
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3008
+        'y': 2096
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3072
+        'y': 2096
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3136
+        'y': 2096
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2560
+        'y': 2144
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2624
+        'y': 2144
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2688
+        'y': 2144
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2752
+        'y': 2144
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2816
+        'y': 2144
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2880
+        'y': 2144
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2944
+        'y': 2144
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3008
+        'y': 2144
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3072
+        'y': 2144
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3136
+        'y': 2144
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2560
+        'y': 2192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2624
+        'y': 2192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2688
+        'y': 2192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2752
+        'y': 2192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2816
+        'y': 2192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2880
+        'y': 2192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2944
+        'y': 2192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3008
+        'y': 2192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 1280
+        'y': 1984
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1344
+        'y': 1984
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1408
+        'y': 1984
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1472
+        'y': 1984
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1536
+        'y': 1984
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1600
+        'y': 1984
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1664
+        'y': 1984
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1728
+        'y': 1984
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1792
+        'y': 1984
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1856
+        'y': 1984
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1920
+        'y': 1984
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 1984
+        'y': 1984
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 2048
+        'y': 1984
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 2112
+        'y': 1984
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 2176
+        'y': 1984
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 2240
+        'y': 1984
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 2304
+        'y': 1984
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 2368
+        'y': 1984
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 2432
+        'y': 1984
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 3072
+        'y': 2192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3136
+        'y': 2192
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 2544
+        'y': 2240
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: 2496
+        'y': 1984
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2496
+        'y': 1920
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2496
+        'y': 1856
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 2624
+        'y': 1728
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 2624
+        'y': 1792
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2432
+        'y': 1984
+        uid: KKpfPwJf6jm3K1
+        exts: {}
+      - x: 2688
+        'y': 1728
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2688
+        'y': 1600
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 2752
+        'y': 1472
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 2816
+        'y': 1344
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 2880
+        'y': 1216
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 2944
+        'y': 1216
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 64
+        'y': 448
+        uid: h74jwM4T7bmHdG
+        exts: {}
+      - x: 3008
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 3072
+        'y': 448
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 3136
+        'y': 448
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 3200
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 3136
+        'y': 512
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3072
+        'y': 512
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3264
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 3328
+        'y': 512
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 3103
+        'y': 384
+        uid: pcgg5ML8MtgGmT
+        exts: {}
+      - x: 1984
+        'y': 1664
+        uid: n1PzLTMkdLcKKf
+        exts: {}
+      - x: 3008
+        'y': 1280
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 3072
+        'y': 1280
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 3200
+        'y': 2192
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3200
+        'y': 2128
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3200
+        'y': 2064
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3200
+        'y': 2000
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 3264
+        'y': 1984
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 3328
+        'y': 1984
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 3392
+        'y': 1984
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 3328
+        'y': 2048
+        uid: 7zT2TgfRgkdhJK
+        exts: {}
+      - x: 3328
+        'y': 2112
+        uid: 7zT2TgfRgkdhJK
+        exts: {}
+      - x: 3392
+        'y': 2176
+        uid: 7zT2TgfRgkdhJK
+        exts: {}
+      - x: 3456
+        'y': 2176
+        uid: 7zT2TgfRgkdhJK
+        exts: {}
+      - x: 3264
+        'y': 2048
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3264
+        'y': 2112
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3264
+        'y': 2176
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3328
+        'y': 2176
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3392
+        'y': 2048
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3392
+        'y': 2112
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3456
+        'y': 2112
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3520
+        'y': 2176
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3520
+        'y': 2112
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3456
+        'y': 2068
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3520
+        'y': 2068
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3584
+        'y': 2068
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3648
+        'y': 2068
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3712
+        'y': 2068
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3776
+        'y': 2068
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3584
+        'y': 2112
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3648
+        'y': 2112
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3712
+        'y': 2112
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3776
+        'y': 2112
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3584
+        'y': 2160
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3648
+        'y': 2160
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3712
+        'y': 2160
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3776
+        'y': 2160
+        uid: crn8m1C86p1f9W
+        exts: {}
+      - x: 3584
+        'y': 2224
+        uid: 7zT2TgfRgkdhJK
+        exts: {}
+      - x: 3648
+        'y': 2224
+        uid: 7zT2TgfRgkdhJK
+        exts: {}
+      - x: 3712
+        'y': 2224
+        uid: 7zT2TgfRgkdhJK
+        exts: {}
+      - x: 3776
+        'y': 2224
+        uid: 7zT2TgfRgkdhJK
+        exts: {}
+      - x: 3712
+        'y': 1984
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 3776
+        'y': 1984
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 3840
+        'y': 1984
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 3904
+        'y': 1984
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 3840
+        'y': 2240
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3840
+        'y': 2176
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3840
+        'y': 2112
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3840
+        'y': 2048
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 3968
+        'y': 1984
+        uid: CGbLr36mfWB7mm
+        exts:
+          param: ratsBirth
+      - x: 3648
+        'y': 1984
+        uid: CGbLr36mfWB7mm
+        exts:
+          param: ratsBirth
+      - x: 3392
+        'y': 1920
+        uid: znFgKhMfkr1cBk
+        exts:
+          param: ratsBirth
+      - x: 3392
+        'y': 1856
+        uid: znFgKhMfkr1cBk
+        exts:
+          param: ratsBirth
+      - x: 3648
+        'y': 1984
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 3584
+        'y': 1984
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 3968
+        'y': 1984
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 4032
+        'y': 1984
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 2688
+        'y': 1664
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2752
+        'y': 1536
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2752
+        'y': 1600
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2816
+        'y': 1472
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2816
+        'y': 1408
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2880
+        'y': 1280
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2880
+        'y': 1344
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2944
+        'y': 1280
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2944
+        'y': 1344
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3008
+        'y': 1344
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3072
+        'y': 1344
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3008
+        'y': 1408
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2944
+        'y': 1408
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2880
+        'y': 1408
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2880
+        'y': 1472
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2880
+        'y': 1536
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2816
+        'y': 1536
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2816
+        'y': 1600
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2816
+        'y': 1664
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2752
+        'y': 1664
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2688
+        'y': 1792
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 2752
+        'y': 1728
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 3328
+        'y': 1216
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 3392
+        'y': 896
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 3520
+        'y': 1152
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 3648
+        'y': 1024
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 3521
+        'y': 925
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 3488
+        'y': 736
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 3392
+        'y': 608
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 3136
+        'y': 1280
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 3520
+        'y': 2240
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: 3968
+        'y': 2816
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: 3968
+        'y': 2752
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4032
+        'y': 2752
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4096
+        'y': 2752
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4160
+        'y': 2752
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4224
+        'y': 2752
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4288
+        'y': 2752
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4416
+        'y': 2752
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4352
+        'y': 2752
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4480
+        'y': 2752
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4544
+        'y': 2752
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4608
+        'y': 2752
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4672
+        'y': 2752
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4736
+        'y': 2752
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4800
+        'y': 2752
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4928
+        'y': 2752
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4864
+        'y': 2752
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4992
+        'y': 2752
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 5056
+        'y': 2752
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 5120
+        'y': 2752
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 5184
+        'y': 2752
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4864
+        'y': 2752
+        uid: FNc2mpm5D8GcTF
+        exts: {}
+      - x: 4160
+        'y': 2240
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 4608
+        'y': 2560
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 4544
+        'y': 2560
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 4480
+        'y': 2560
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 3968
+        'y': 2624
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 4096
+        'y': 2496
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 4160
+        'y': 2496
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 3904
+        'y': 2176
+        uid: htW4kDWHjbJfNp
+        exts: {}
+      - x: 4928
+        'y': 2496
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 4992
+        'y': 2496
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 5120
+        'y': 2752
+        uid: KKpfPwJf6jm3K1
+        exts: {}
+      - x: 4187
+        'y': 2170
+        uid: j7FnfbrKNQ5Mbd
+        exts: {}
+      - x: 5248
+        'y': 2752
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: 6528
+        'y': 1920
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: 6528
+        'y': 640
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: 6464
+        'y': 2624
+        uid: 5t6QtkFJPfDrzG
+        exts: {}
+      - x: 6272
+        'y': 2560
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: 6208
+        'y': 2560
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: 6080
+        'y': 2496
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 6016
+        'y': 2496
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 5846
+        'y': 2205
+        uid: rh7MG9T3Mk2HL8
+        exts: {}
+      - x: 6016
+        'y': 2304
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 6080
+        'y': 2304
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 6400
+        'y': 2752
+        uid: KKpfPwJf6jm3K1
+        exts: {}
+      - x: 5696
+        'y': 2752
+        uid: BP6Qk1937FLdhf
+        exts: {}
+      - x: 5760
+        'y': 2176
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: 5184
+        'y': 1216
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: 6033
+        'y': 2304
+        uid: KKpfPwJf6jm3K1
+        exts: {}
+      - x: 5632
+        'y': 2048
+        uid: B8TmPjpGkMNmmz
+        exts: {}
+      - x: 5824
+        'y': 1984
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 5888
+        'y': 1984
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 5952
+        'y': 1984
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 6016
+        'y': 1984
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 6080
+        'y': 1984
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 6144
+        'y': 1984
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 6272
+        'y': 1984
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 6208
+        'y': 1984
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 6336
+        'y': 1984
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 5824
+        'y': 1472
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: 5888
+        'y': 1472
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: 5952
+        'y': 1472
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: 6016
+        'y': 1472
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: 6080
+        'y': 1472
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: 6144
+        'y': 1472
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: 6208
+        'y': 1472
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: 6272
+        'y': 1472
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: 6464
+        'y': 1856
+        uid: 5t6QtkFJPfDrzG
+        exts: {}
+      - x: 6272
+        'y': 1792
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: 6208
+        'y': 1792
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: 6016
+        'y': 1728
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 5952
+        'y': 1728
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 5888
+        'y': 1728
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 5632
+        'y': 1600
+        uid: Wgwf61dNh8gRM2
+        exts: {}
+      - x: 5696
+        'y': 1600
+        uid: B8TmPjpGkMNmmz
+        exts: {}
+      - x: 5901
+        'y': 1728
+        uid: KKpfPwJf6jm3K1
+        exts: {}
+      - x: 6400
+        'y': 1408
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 6272
+        'y': 1344
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 6144
+        'y': 1280
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 6080
+        'y': 1280
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 6016
+        'y': 1280
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 5952
+        'y': 1280
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 5824
+        'y': 1216
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 5760
+        'y': 1216
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 5696
+        'y': 1216
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 5632
+        'y': 1216
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 5568
+        'y': 1152
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 5504
+        'y': 1152
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 5440
+        'y': 1152
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 5376
+        'y': 1152
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 5312
+        'y': 1152
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 5248
+        'y': 1152
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 5184
+        'y': 1152
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 3683
+        'y': 1024
+        uid: KKpfPwJf6jm3K1
+        exts: {}
+      - x: 4160
+        'y': 1216
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: 3904
+        'y': 768
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 4096
+        'y': 832
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4160
+        'y': 896
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4224
+        'y': 960
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4288
+        'y': 1024
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4352
+        'y': 1088
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4416
+        'y': 1152
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 4096
+        'y': 896
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 4096
+        'y': 960
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 4160
+        'y': 960
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 4160
+        'y': 1088
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 4160
+        'y': 1024
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 4224
+        'y': 1024
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 4224
+        'y': 1088
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 4288
+        'y': 1088
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 4352
+        'y': 1152
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 4288
+        'y': 1152
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 4224
+        'y': 1152
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 4160
+        'y': 1152
+        uid: Hj8zMhjFnktqD5
+        exts: {}
+      - x: 4114
+        'y': 832
+        uid: KKpfPwJf6jm3K1
+        exts: {}
+      - x: 6528
+        'y': 576
+        uid: QpwF38mhqpPKD6
+        exts: {}
+      - x: 3520
+        'y': 704
+        uid: f7B8RQTdkGNhG2
+        exts: {}
+      - x: 4544
+        'y': 1216
+        uid: CGbLr36mfWB7mm
+        exts:
+          param: ratsBirth2
+      - x: 4992
+        'y': 1216
+        uid: CGbLr36mfWB7mm
+        exts:
+          param: ratsBirth2
+      - x: 4768
+        'y': 1216
+        uid: CGbLr36mfWB7mm
+        exts:
+          param: ratsBirth2
+      - x: 5184
+        'y': 960
+        uid: znFgKhMfkr1cBk
+        exts:
+          param: ratsBirth2
+      - x: 5184
+        'y': 1024
+        uid: znFgKhMfkr1cBk
+        exts:
+          param: ratsBirth2
+      - x: 5184
+        'y': 1088
+        uid: znFgKhMfkr1cBk
+        exts:
+          param: ratsBirth2
+      - x: 4640
+        'y': 1216
+        uid: BP6Qk1937FLdhf
+        exts: {}
+      - x: 4128
+        'y': 640
+        uid: Dz4rpRb7tcw4mr
+        exts: {}
+      - x: 5184
+        'y': 2688
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5184
+        'y': 2624
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5184
+        'y': 2560
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5184
+        'y': 2496
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5248
+        'y': 2496
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5248
+        'y': 2560
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5248
+        'y': 2624
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5248
+        'y': 2688
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5312
+        'y': 2496
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5312
+        'y': 2560
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5312
+        'y': 2624
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5312
+        'y': 2688
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5376
+        'y': 2496
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5376
+        'y': 2560
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5376
+        'y': 2624
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5376
+        'y': 2688
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5568
+        'y': 2496
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5504
+        'y': 2496
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5440
+        'y': 2496
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5440
+        'y': 2560
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5504
+        'y': 2560
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5568
+        'y': 2560
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5568
+        'y': 2624
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5504
+        'y': 2624
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5440
+        'y': 2624
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5440
+        'y': 2688
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5504
+        'y': 2688
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 5568
+        'y': 2688
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 3840
+        'y': 704
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 3840
+        'y': 640
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 3840
+        'y': 576
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 3840
+        'y': 512
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 3840
+        'y': 448
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 3840
+        'y': 384
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 3584
+        'y': 1728
+        uid: znFgKhMfkr1cBk
+        exts:
+          param: ratsBirth
+      - x: 3648
+        'y': 1728
+        uid: znFgKhMfkr1cBk
+        exts:
+          param: ratsBirth
+      - x: 3712
+        'y': 1728
+        uid: znFgKhMfkr1cBk
+        exts:
+          param: ratsBirth
+      - x: 3776
+        'y': 1792
+        uid: znFgKhMfkr1cBk
+        exts:
+          param: ratsBirth
+      - x: 3840
+        'y': 1728
+        uid: znFgKhMfkr1cBk
+        exts:
+          param: ratsBirth
+      - x: 3904
+        'y': 1728
+        uid: znFgKhMfkr1cBk
+        exts:
+          param: ratsBirth
+      - x: 3968
+        'y': 1728
+        uid: znFgKhMfkr1cBk
+        exts:
+          param: ratsBirth
+      - x: 4032
+        'y': 1792
+        uid: znFgKhMfkr1cBk
+        exts:
+          param: ratsBirth
+      - x: 6080
+        'y': 2112
+        uid: n1PzLTMkdLcKKf
+        exts: {}
+      - x: 6208
+        'y': 1984
+        uid: w7hf4D6cKDdL9z
+        exts: {}
+      - x: 6208
+        'y': 1472
+        uid: q5c9GWNFQLmMtz
+        exts: {}
+      - x: 5760
+        'y': 1216
+        uid: BP6Qk1937FLdhf
+        exts: {}
+      - x: 4096
+        'y': 1984
+        uid: znFgKhMfkr1cBk
+        exts:
+          param: fight
+      - x: 4160
+        'y': 1984
+        uid: znFgKhMfkr1cBk
+        exts:
+          param: fight
+      - x: 4224
+        'y': 1984
+        uid: znFgKhMfkr1cBk
+        exts:
+          param: fight
+      - x: 4288
+        'y': 1984
+        uid: znFgKhMfkr1cBk
+        exts:
+          param: fight
+      - x: 6144
+        'y': 2752
+        uid: q5c9GWNFQLmMtz
+        exts: {}
+      - x: 5888
+        'y': 2752
+        uid: w7hf4D6cKDdL9z
+        exts: {}
+      - x: 960
+        'y': 1344
+        uid: B38N26BpTFhDTB
+        exts: {}
+      - x: 4189
+        'y': 2115
+        uid: B38N26BpTFhDTB
+        exts: {}
+      - x: 3309
+        'y': 1411
+        uid: B38N26BpTFhDTB
+        exts: {}
+      - x: 3039
+        'y': 413
+        uid: fH1Wckq3N3FHb3
+        exts: {}
+      - x: 4979
+        'y': 2392
+        uid: B38N26BpTFhDTB
+        exts: {}
+      - x: 5726
+        'y': 2297
+        uid: B38N26BpTFhDTB
+        exts: {}
+      - x: 2747
+        'y': 1256
+        uid: B38N26BpTFhDTB
+        exts: {}
+      - x: 2240
+        'y': 1984
+        uid: w7hf4D6cKDdL9z
+        exts: {}
+      - x: 832
+        'y': 1536
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: 2030
+        'y': 188
+        uid: j7FnfbrKNQ5Mbd
+        exts: {}
+      - x: 2941
+        'y': 1147
+        uid: j7FnfbrKNQ5Mbd
+        exts: {}
+      - x: 5808
+        'y': 2146
+        uid: htW4kDWHjbJfNp
+        exts: {}
+      - x: 4336
+        'y': 941
+        uid: B38N26BpTFhDTB
+        exts: {}
+      - x: 163
+        'y': 450
+        uid: LQkmMFJ13dFGQd
+        exts: {}
+    tiles:
+      - depth: -10
+        tiles: []
+        extends: {}
+    extends: {}
+    lastmod: 1660798862372
+    thumbnail: 2N2hmtq241QjrR
+    uid: 2N2hmtq241QjrR
+  - type: room
+    oncreate: ''
+    onstep: PauseHandler()
+    ondraw: ''
+    onleave: ''
+    gridX: 64
+    gridY: 64
+    width: 1280
+    height: 720
+    name: Level_04
+    backgrounds: []
+    copies: []
+    tiles:
+      - depth: -10
+        tiles: []
+        extends: {}
+    extends: {}
+    lastmod: 1660726626396
+    thumbnail: jtp8fBQJtTn9zQ
+    uid: jtp8fBQJtTn9zQ
+actions:
+  - name: MoveRight
+    methods:
+      - code: keyboard.KeyD
+      - code: keyboard.ArrowRight
+  - name: MoveLeft
+    methods:
+      - code: keyboard.ArrowLeft
+      - code: keyboard.KeyA
+  - name: Jump
+    methods:
+      - code: keyboard.KeyW
+      - code: keyboard.ArrowUp
+  - name: Pause
+    methods:
+      - code: keyboard.Escape
+  - name: Restart
+    methods:
+      - code: keyboard.KeyR
+  - name: NextLvl
+    methods:
+      - code: keyboard.Digit0
+  - name: Shoot
+    methods:
+      - code: keyboard.Space
+  - name: PrevLvl
+    methods:
+      - code: keyboard.Digit9
+emitterTandems:
+  - name: RubinFx
+    uid: 4nfHfn1hKCjHqm
+    origname: ptKCjHqm
+    emitters:
+      - texture: KCD81gdJ8977n3
+        openedTabs:
+          - texture
+          - spawning
+        settings:
+          alpha:
+            list:
+              - value: 0.99
+                time: 0
+              - value: 1
+                time: 0.5674603174603174
+              - value: 0.99
+                time: 1
+            isStepped: false
+          scale:
+            list:
+              - value: 1
+                time: 0
+              - value: 0.1200000000000001
+                time: 1
+            isStepped: false
+          color:
+            list:
+              - value: ffffff
+                time: 0
+              - value: ffffff
+                time: 0.5674603174603174
+              - value: ffffff
+                time: 1
+            isStepped: false
+          blendMode: normal
+          speed:
+            list:
+              - value: 500
+                time: 0
+              - value: 100
+                time: 1
+            isStepped: false
+          startRotation:
+            min: 0
+            max: 360
+          rotationSpeed:
+            min: 0
+            max: 0
+          rotationAcceleration: 0
+          lifetime:
+            min: 0.5
+            max: 0.5
+          frequency: 0.001
+          spawnChance: 0.98
+          particlesPerWave: 1
+          angleStart: 270
+          emitterLifetime: 0.5
+          maxParticles: 10
+          maxSpeed: 0
+          pos:
+            x: 0
+            'y': 0
+          acceleration:
+            x: 0
+            'y': 0
+          addAtBack: false
+          spawnType: circle
+          spawnCircle:
+            x: 0
+            'y': 0
+            r: 32
+          delay: 0
+          minimumSpeedMultiplier: 0.48
+        uid: 88QwLfKPbPddfb
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    lastmod: 1659075688058
+    type: tandem
+  - name: HearthFX
+    uid: k9jT8wcCpjdqdN
+    origname: ptpjdqdN
+    emitters:
+      - texture: RdzFWmzrKRLqFF
+        openedTabs:
+          - texture
+        settings:
+          alpha:
+            list:
+              - value: 0.99
+                time: 0
+              - value: 1
+                time: 0.5674603174603174
+              - value: 0.99
+                time: 1
+            isStepped: false
+          scale:
+            list:
+              - value: 1
+                time: 0
+              - value: 0.1200000000000001
+                time: 1
+            isStepped: false
+          color:
+            list:
+              - value: ffffff
+                time: 0
+              - value: ffffff
+                time: 0.5674603174603174
+              - value: ffffff
+                time: 1
+            isStepped: false
+          blendMode: normal
+          speed:
+            list:
+              - value: 500
+                time: 0
+              - value: 100
+                time: 1
+            isStepped: false
+          startRotation:
+            min: 0
+            max: 360
+          rotationSpeed:
+            min: 0
+            max: 0
+          rotationAcceleration: 0
+          lifetime:
+            min: 0.5
+            max: 0.5
+          frequency: 0.001
+          spawnChance: 0.98
+          particlesPerWave: 1
+          angleStart: 270
+          emitterLifetime: 0.5
+          maxParticles: 10
+          maxSpeed: 0
+          pos:
+            x: 0
+            'y': 0
+          acceleration:
+            x: 0
+            'y': 0
+          addAtBack: false
+          spawnType: circle
+          spawnCircle:
+            x: 0
+            'y': 0
+            r: 32
+          delay: 0
+          minimumSpeedMultiplier: 0.48
+        uid: 88QwLfKPbPddfb
+    lastmod: 1659075688058
+    type: tandem
+  - name: fire
+    uid: 55PRbTh29GWqzK
+    origname: pt9GWqzK
+    emitters:
+      - texture: T3jbKP8hhRkrdz
+        openedTabs:
+          - texture
+          - spawning
+        settings:
+          alpha:
+            list:
+              - value: 0
+                time: 0
+              - value: 1
+                time: 0.5
+              - value: 0
+                time: 1
+            isStepped: false
+          scale:
+            list:
+              - value: 1
+                time: 0
+              - value: 0.3
+                time: 1
+            isStepped: false
+          color:
+            list:
+              - value: ffffff
+                time: 0
+              - value: ffffff
+                time: 0.5
+              - value: ffffff
+                time: 1
+            isStepped: false
+          blendMode: normal
+          speed:
+            list:
+              - value: 500
+                time: 0
+              - value: 100
+                time: 1
+            isStepped: false
+          startRotation:
+            min: 0
+            max: 360
+          rotationSpeed:
+            min: 0
+            max: 0
+          rotationAcceleration: 0
+          lifetime:
+            min: 0.5
+            max: 0.5
+          frequency: 0.001
+          spawnChance: 1
+          particlesPerWave: 1
+          angleStart: 270
+          emitterLifetime: 0.5
+          maxParticles: 20
+          maxSpeed: 0
+          pos:
+            x: 0
+            'y': 0
+          acceleration:
+            x: 0
+            'y': 0
+          addAtBack: false
+          spawnType: circle
+          spawnCircle:
+            x: 0
+            'y': 0
+            r: 32
+          delay: 0
+        uid: FGpbmHmwfj81m4
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    lastmod: 1660712664934
+    type: tandem
+scripts:
+  - name: inGameRoomStart
+    code: |-
+      var inGameRoomStart = function (room) {
+          if(!ct.startLives) {
+              ct.startLives = 3;
+          }
+          room.lives = ct.startLives;
+          room.crystals = 0;
+          room.crystalsTotal = ct.templates.list['GreenCrystal'].length;
+          room.kill = false;
+          ct.templates.copy('CrystalCounter', 0, 0);
+          ct.templates.copy('HeartsWidget', 0, 0);
+          ct.templates.copy('RingWidget', 0, 0);
+      };
+  - name: PlayerDead
+    code: |-
+      var PlayerDead = function (player, ct) { 
+          ct.room.kill = true;
+          ct.sound.spawn('player_death');  
+          player.hspd = 0;
+          player.vspd = 0;
+          ct.camera.shake = 2;
+
+          player.x = player.savedX;
+          player.y = player.savedY; 
+
+           //отнять одну жизнь
+           ct.room.lives--;
+           if (ct.room.lives <= 0) {
+               // Перезапустить комнату: перейти к комнате с текущим названием
+               ct.rooms.switch(ct.room.name);
+           }
+          
+        
+          return;
+      };
+  - name: EnemyKill
+    code: |-
+      var EnemyKill = function (enemy, ct, tex) {
+          var player = ct.place.meet(enemy, enemy.x, enemy.y, 'Katya')
+          if (player) {
+              player.vspd = player.jumpSpeed * 1.3;
+                     
+              if(ct.room.kill == false && (enemy.getGlobalPosition().y - player.getGlobalPosition().y) > enemy.height / 2) {
+                  enemy.cgroup = undefined;
+                  enemy.tex = tex;
+                  ct.sound.spawn('enemy_death');  
+                      
+                  ct.timer.add(500, 'kill').then(() => {
+                  enemy.kill = true;
+                  })
+              }
+          }
+
+          var fireball = ct.place.meet(enemy, enemy.x, enemy.y, 'fireball')
+          if (fireball) {
+              enemy.cgroup = undefined;
+              enemy.tex = tex;
+              ct.sound.spawn('enemy_death');  
+                  
+              ct.timer.add(500, 'kill').then(() => {
+                  enemy.kill = true;
+              })
+             fireball.kill = true;
+             ct.emitters.fire('fire', fireball.x, fireball.y);
+          } 
+      };
+  - name: PauseHandler
+    code: |-
+      var PauseHandler = function () {
+          if (ct.actions.Pause.pressed) {
+              if (!ct.room.paused) {
+                  ct.room.paused = true;
+
+                  ct.pixiApp.ticker.speed = 0;
+                  ct.room.alpha = 0.5;
+
+                  ct.room.unpauseHint = ct.templates.copy('PauseHint', ct.room.player.x, ct.room.player.y);
+                  ct.room.player.speed = 0;
+                  
+                  ct.sound.pause(ct.room.sound)
+              } else {
+                  ct.room.paused = false;
+
+                  ct.pixiApp.ticker.speed = 1; // `1` is the normal speed
+                  ct.room.player.speed = ct.room.player.constSpeed
+
+                  ct.room.alpha = 1;
+                  ct.room.unpauseHint.kill = true; // Remove the copy
+
+                  ct.sound.resume(ct.room.sound)
+              }
+          }
+
+          if (ct.actions.Restart.pressed) {
+              ct.rooms.switch(ct.room.name)
+          }
+
+
+          if(ct.actions.NextLvl.pressed && ct.room.nextRoom) {
+              ct.sound.stop(ct.room.sound)
+              ct.rooms.switch(ct.room.nextRoom);
+          }
+
+           if(ct.actions.PrevLvl.pressed && ct.room.prevRoom) {
+              ct.sound.stop(ct.room.sound)
+              ct.rooms.switch(ct.room.prevRoom);
+          }
+      }
+  - name: JumpBlock
+    code: |-
+      var JumpBlock = function(entity) {
+          //столкновение с типом шаблона
+          var player = ct.place.meet(entity, entity.x, entity.y, 'Katya');
+          if (player) {
+              entity.cgroup = undefined;
+          } else {
+              entity.cgroup = 'Solid';
+          }
+      }
+starting: 0
+contentTypes: []
+groups:
+  fonts: []
+  textures: []
+  styles: []
+  rooms: []
+  templates: []
+  sounds: []
+  emitterTandems: []
+settings:
+  authoring:
+    author: Sergey
+    site: 'https://prologgg.github.io/wd-game'
+    title: WD-GAME
+    version:
+      - 0
+      - 0
+      - 0
+    versionPostfix: ''
+  rendering:
+    usePixiLegacy: true
+    maxFPS: 60
+    pixelatedrender: false
+    highDensity: true
+    desktopMode: maximized
+  export:
+    windows: true
+    linux: true
+    mac: true
+    functionWrap: false
+    codeModifier: none
+  branding:
+    icon: qChqQRtzR6DkFm
+    accent: '#446adb'
+    invertPreloaderScheme: true
+    splashScreen: 1fKcf1KGWLWhQ6
+    hideLoadingLogo: false
+  fps: 30
+fonts: []
+startroom: m8BCFHLPQ4nt9n
+palette: []
