@@ -2391,7 +2391,7 @@ templates:
     texture: q6Fh8RfgN3TBrm
     visible: true
     extends: {}
-    lastmod: 1661328024340
+    lastmod: 1661405534448
     uid: pcgg5ML8MtgGmT
   - type: template
     name: GreenCrystal
@@ -2549,25 +2549,19 @@ templates:
   - type: template
     name: Prince
     depth: 0
-    oncreate: >-
+    oncreate: |-
       this.scale.x=this.scale.y=2.1
-
       this.gravity = 0.5;
-
-      this.speed = 1 * ct.delta; // Максимальная скорость движения по
-      горизонтали
-
+      this.speed = 1; // Максимальная скорость движения по горизонтали
 
       this.hspd = 0; // Вертикальная скорость
 
-
       this.animationSpeed = 0.15;
-
 
       this.isAnimate = true;
 
-
       ct.room.prince = this;
+      this.depth = 1;
     onstep: >
       if(ct.place.occupied(this, this.x, this.y, 'Deadly')) {
           ct.room.gameOver.visible = true;
@@ -2621,12 +2615,12 @@ templates:
     visible: true
     extends:
       cgroup: Solid
-    lastmod: 1661321325575
+    lastmod: 1661407501917
     uid: RmRT57B8QcnJ9B
   - type: template
     name: MerryText
     depth: 0
-    oncreate: "this.text = new PIXI.Text('', ct.styles.get('HeartStyle'));\nthis.text.x = + 52;\nthis.text.anchor.y = 0.5;\nthis.text.anchor.x = 1;\n\nthis.addChild(this.text);\nthis.visible = true;\n\nct.room.merryText = this;\n\nthis.message = 'Наконец-то ты нашла меня!\U0001F31F Ты проделала огромный путь!\\nОдолела кучу врагов! Дралась с медведем\U0001F43B и даже с драконом \U0001F432\\nВижу что ты смогла собрать все кольца на пути\U0001F60F\\nЯ очень тебя люблю ❤️ и теперь я хочу предложить тебе своё \U0001F48D и спросить:\\n\\nТЫ ВЫЙДЕШЬ ЗА МЕНЯ ЗАМУЖ ?';\nthis.messagePanel = ''\nthis.i = 0;\nthis.start = false;\n\nthis.speedK = 5;\nthis.length = this.message.length * this.speedK;\n\nthis.depth = 99"
+    oncreate: "this.text = new PIXI.Text('', ct.styles.get('HeartStyle'));\nthis.text.x = + 52;\nthis.text.anchor.y = 0.5;\nthis.text.anchor.x = 1;\n\nthis.addChild(this.text);\nthis.visible = true;\n\nct.room.merryText = this;\n\nthis.message = 'Наконец-то ты нашла меня!\U0001F31F Ты проделала огромный путь!\\nОдолела кучу врагов! Дралась с медведем\U0001F43B и даже с драконом \U0001F432\\nВижу, что ты смогла собрать все кольца на пути\U0001F60F\\nЯ очень тебя люблю ❤️ и теперь я хочу предложить тебе своё \U0001F48D и спросить:\\n\\nТЫ ВЫЙДЕШЬ ЗА МЕНЯ ЗАМУЖ ?';\nthis.messagePanel = ''\nthis.i = 0;\nthis.start = false;\n\nthis.speedK = 5;\nthis.length = this.message.length * this.speedK;\n\nthis.depth = 99"
     onstep: |-
       if (this.start && this.i < this.length) {
           if (this.i % this.speedK == 0) {
@@ -2649,7 +2643,7 @@ templates:
     texture: -1
     visible: true
     extends: {}
-    lastmod: 1661328492637
+    lastmod: 1661406599156
     uid: GFcKpKMjHgpwT2
   - type: template
     name: sliz
@@ -2960,7 +2954,7 @@ templates:
     visible: true
     extends:
       cgroup: Enemy
-    lastmod: 1661252848372
+    lastmod: 1661407903473
     uid: FNc2mpm5D8GcTF
   - type: template
     name: wolf2
@@ -3297,14 +3291,23 @@ templates:
   - type: template
     name: skelet
     depth: 0
-    oncreate: this.animationSpeed = 19 / 60;
+    oncreate: |-
+      this.animationSpeed = 19 / 60;
+      this.isMove = false;
     onstep: |-
       var player = ct.place.meet(this, this.x, this.y+100, 'Katya')
-      if (player) {
-         this.play()
+      if(player) {
+         this.isMove = true;
          this.cgroup='Solid'
-
-         player.x += ct.u.ldx(1, this.direction);
+      } else {
+         this.cgroup=undefined
+      }
+      if (this.isMove) {
+         this.play()
+         
+         if(player) {
+            player.x += ct.u.ldx(1, this.direction);
+         }
          if (this.rotation >= -0.5 && this.direction == 0) {
             this.rotation -= 0.015;
             this.direction = 0;
@@ -3319,13 +3322,13 @@ templates:
          }   
       } else {
 
-         if(this.rotation != 0) {
-            if (this.rotation >= 0) {
-               this.rotation -= 0.015;
-            } else { 
-               this.rotation += 0.015;
-            }   
-         }
+         // if(this.rotation != 0) {
+         //    if (this.rotation >= 0) {
+         //       this.rotation -= 0.015;
+         //    } else { 
+         //       this.rotation += 0.015;
+         //    }   
+         // }
       }
 
        if (ct.actions.Jump.down && player) {
@@ -3504,17 +3507,19 @@ templates:
       } else {
           this.tex = 'drDie';
           this.cgroup = undefined
-          ct.timer.add(550, 'kill').then(() => {
-             this.stop()
-          })
+          
+          this.gotoAndStop(4)    
           
           ct.templates.list['platformSave'].forEach(function(item,index){
               item.kill = true;
           })
-
-          ct.room.exit.y = ct.room.posExitY;
-          ct.room.exit.visible = true;
-          ct.sound.spawn('ring');
+          
+          if(!ct.room.exit.visible) {
+              ct.sound.stop(ct.room.sound)
+              ct.room.exit.y = ct.room.posExitY;
+              ct.sound.spawn('ring');
+              ct.room.exit.visible = true;
+          }    
       }
 
 
@@ -3548,10 +3553,6 @@ templates:
 
       var fireball = ct.place.meet(this, this.x, this.y, 'fireball')
           if (fireball) {
-               if(!this.die){
-                  this.scale.x -= 0.04;
-                  this.scale.y -= 0.017;
-               }
                ct.sound.spawn('enemy_death');  
                this.live--;
 
@@ -3578,7 +3579,7 @@ templates:
     visible: true
     extends:
       cgroup: Enemy
-    lastmod: 1661328100059
+    lastmod: 1661407688271
     uid: RMMGJ943W9Cn8d
     blendMode: normal
   - type: template
@@ -9357,12 +9358,20 @@ rooms:
         'y': 1082
         uid: j7FnfbrKNQ5Mbd
         exts: {}
+      - x: -832
+        'y': -512
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: 3072
+        'y': 2496
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
     tiles:
       - depth: -10
         tiles: []
         extends: {}
     extends: {}
-    lastmod: 1661258751251
+    lastmod: 1661408895468
     thumbnail: 2N2hmtq241QjrR
     uid: 2N2hmtq241QjrR
   - type: room
@@ -9729,16 +9738,6 @@ rooms:
         'y': 704
         uid: DF38kTwcjpNgHr
         exts: {}
-      - x: 0
-        'y': 640
-        uid: znFgKhMfkr1cBk
-        exts:
-          param: ratBirth
-      - x: 64
-        'y': 640
-        uid: znFgKhMfkr1cBk
-        exts:
-          param: ratBirth
       - x: 192
         'y': 704
         uid: DF38kTwcjpNgHr
@@ -9767,7 +9766,7 @@ rooms:
         'y': 576
         uid: n1PzLTMkdLcKKf
         exts: {}
-      - x: 0
+      - x: 50
         'y': 640
         uid: h74jwM4T7bmHdG
         exts: {}
@@ -9901,14 +9900,6 @@ rooms:
         'y': -879
         uid: 1tn98j5p4fH7rk
         exts: {}
-      - x: 1795
-        'y': -417
-        uid: f7B8RQTdkGNhG2
-        exts: {}
-      - x: 2816
-        'y': -384
-        uid: f7B8RQTdkGNhG2
-        exts: {}
       - x: 1152
         'y': -384
         uid: f7B8RQTdkGNhG2
@@ -9939,21 +9930,6 @@ rooms:
         uid: CGbLr36mfWB7mm
         exts:
           prarm: ratBirth2
-      - x: 3712
-        'y': 64
-        uid: znFgKhMfkr1cBk
-        exts:
-          param: ratBirth2
-      - x: 3776
-        'y': 64
-        uid: znFgKhMfkr1cBk
-        exts:
-          param: ratBirth2
-      - x: 3840
-        'y': 64
-        uid: znFgKhMfkr1cBk
-        exts:
-          param: ratBirth2
       - x: 2624
         'y': -512
         uid: 1tn98j5p4fH7rk
@@ -10104,20 +10080,8 @@ rooms:
         'y': -1408
         uid: n1PzLTMkdLcKKf
         exts: {}
-      - x: 1856
-        'y': -1408
-        uid: n1PzLTMkdLcKKf
-        exts: {}
-      - x: 3008
-        'y': -1408
-        uid: n1PzLTMkdLcKKf
-        exts: {}
       - x: 294
         'y': -1246
-        uid: f7B8RQTdkGNhG2
-        exts: {}
-      - x: 764
-        'y': -1251
         uid: f7B8RQTdkGNhG2
         exts: {}
       - x: 2541
@@ -10156,10 +10120,6 @@ rooms:
         'y': -5184
         uid: r8z1cq9zjLGQ1Q
         exts: {}
-      - x: 2176
-        'y': 384
-        uid: n1PzLTMkdLcKKf
-        exts: {}
       - x: 2048
         'y': -320
         uid: n1PzLTMkdLcKKf
@@ -10167,10 +10127,6 @@ rooms:
       - x: 1024
         'y': 448
         uid: n1PzLTMkdLcKKf
-        exts: {}
-      - x: 704
-        'y': 256
-        uid: rh7MG9T3Mk2HL8
         exts: {}
       - x: 960
         'y': 256
@@ -10464,10 +10420,6 @@ rooms:
         'y': -2176
         uid: BP6Qk1937FLdhf
         exts: {}
-      - x: 1216
-        'y': -2240
-        uid: f7B8RQTdkGNhG2
-        exts: {}
       - x: 640
         'y': -2240
         uid: f7B8RQTdkGNhG2
@@ -10585,38 +10537,6 @@ rooms:
         uid: 8D2fJjfTddNFTw
         exts: {}
       - x: 192
-        'y': -2624
-        uid: TNPcdddP3wnJ83
-        exts: {}
-      - x: 192
-        'y': -2688
-        uid: TNPcdddP3wnJ83
-        exts: {}
-      - x: 192
-        'y': -2752
-        uid: TNPcdddP3wnJ83
-        exts: {}
-      - x: 192
-        'y': -2816
-        uid: TNPcdddP3wnJ83
-        exts: {}
-      - x: 192
-        'y': -2880
-        uid: TNPcdddP3wnJ83
-        exts: {}
-      - x: 192
-        'y': -2944
-        uid: TNPcdddP3wnJ83
-        exts: {}
-      - x: 192
-        'y': -3008
-        uid: TNPcdddP3wnJ83
-        exts: {}
-      - x: 192
-        'y': -3072
-        uid: TNPcdddP3wnJ83
-        exts: {}
-      - x: 192
         'y': -3136
         uid: TNPcdddP3wnJ83
         exts: {}
@@ -10638,22 +10558,6 @@ rooms:
         exts: {}
       - x: 192
         'y': -3456
-        uid: TNPcdddP3wnJ83
-        exts: {}
-      - x: 192
-        'y': -3520
-        uid: TNPcdddP3wnJ83
-        exts: {}
-      - x: 192
-        'y': -3712
-        uid: TNPcdddP3wnJ83
-        exts: {}
-      - x: 192
-        'y': -3584
-        uid: TNPcdddP3wnJ83
-        exts: {}
-      - x: 192
-        'y': -3648
         uid: TNPcdddP3wnJ83
         exts: {}
       - x: 256
@@ -10681,10 +10585,6 @@ rooms:
         uid: TNPcdddP3wnJ83
         exts: {}
       - x: 640
-        'y': -3264
-        uid: TNPcdddP3wnJ83
-        exts: {}
-      - x: 704
         'y': -3264
         uid: TNPcdddP3wnJ83
         exts: {}
@@ -11020,10 +10920,6 @@ rooms:
         'y': -3456
         uid: n1PzLTMkdLcKKf
         exts: {}
-      - x: 1856
-        'y': -3520
-        uid: n1PzLTMkdLcKKf
-        exts: {}
       - x: 832
         'y': -3456
         uid: n1PzLTMkdLcKKf
@@ -11042,14 +10938,6 @@ rooms:
         exts: {}
       - x: 1280
         'y': -3520
-        uid: TNPcdddP3wnJ83
-        exts: {}
-      - x: 1280
-        'y': -3584
-        uid: TNPcdddP3wnJ83
-        exts: {}
-      - x: 1344
-        'y': -3584
         uid: TNPcdddP3wnJ83
         exts: {}
       - x: 1344
@@ -11155,10 +11043,6 @@ rooms:
       - x: 2176
         'y': -3328
         uid: q5c9GWNFQLmMtz
-        exts: {}
-      - x: 704
-        'y': -3264
-        uid: CGbLr36mfWB7mm
         exts: {}
       - x: 512
         'y': -3264
@@ -11592,12 +11476,28 @@ rooms:
         'y': 512
         uid: LQkmMFJ13dFGQd
         exts: {}
+      - x: -896
+        'y': -64
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: -896
+        'y': -2304
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: 704
+        'y': -3264
+        uid: TNPcdddP3wnJ83
+        exts: {}
+      - x: 192
+        'y': -3520
+        uid: TNPcdddP3wnJ83
+        exts: {}
     tiles:
       - depth: -10
         tiles: []
         extends: {}
     extends: {}
-    lastmod: 1661321219037
+    lastmod: 1661409091882
     thumbnail: jtp8fBQJtTn9zQ
     uid: jtp8fBQJtTn9zQ
   - type: room
@@ -11616,8 +11516,6 @@ rooms:
       ct.camera.borderY = 200;
 
       ct.room.exit.tex = 'exit_open';
-      ct.room.exit.scale.x = 6;
-      ct.room.exit.scale.y = 10;
       this.posExitY = ct.room.exit.y;
       ct.room.exit.y=-10000;
       ct.room.exit.visible = false;
@@ -11656,7 +11554,7 @@ rooms:
         'y': -128
         uid: r8z1cq9zjLGQ1Q
         exts: {}
-      - x: 960
+      - x: 1060
         'y': 700
         uid: RMMGJ943W9Cn8d
         exts: {}
@@ -11740,16 +11638,36 @@ rooms:
         'y': 640
         uid: TNPcdddP3wnJ83
         exts: {}
-      - x: 192
-        'y': 64
+      - x: 960
+        'y': 640
         uid: pcgg5ML8MtgGmT
+        exts: {}
+      - x: -896
+        'y': -128
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: 2240
+        'y': -128
+        uid: r8z1cq9zjLGQ1Q
+        exts: {}
+      - x: -896
+        'y': 1152
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: 384
+        'y': 1152
+        uid: M31JKrKNktDfzN
+        exts: {}
+      - x: 1408
+        'y': 1152
+        uid: M31JKrKNktDfzN
         exts: {}
     tiles:
       - depth: -10
         tiles: []
         extends: {}
     extends: {}
-    lastmod: 1661327851714
+    lastmod: 1661407762643
     thumbnail: 7M8kTDQt4wm8Fp
     uid: 7M8kTDQt4wm8Fp
   - type: room
@@ -11827,10 +11745,6 @@ rooms:
         uid: DF38kTwcjpNgHr
         exts: {}
       - x: 64
-        'y': 704
-        uid: DF38kTwcjpNgHr
-        exts: {}
-      - x: 128
         'y': 704
         uid: DF38kTwcjpNgHr
         exts: {}
@@ -12002,20 +11916,24 @@ rooms:
         'y': 320
         uid: tP5pq4rj5dz1zM
         exts: {}
-      - x: 128
-        'y': 704
-        uid: LQkmMFJ13dFGQd
-        exts: {}
       - x: 192
         'y': 128
         uid: GFcKpKMjHgpwT2
+        exts: {}
+      - x: 128
+        'y': 704
+        uid: DF38kTwcjpNgHr
+        exts: {}
+      - x: 128
+        'y': 250
+        uid: LQkmMFJ13dFGQd
         exts: {}
     tiles:
       - depth: -10
         tiles: []
         extends: {}
     extends: {}
-    lastmod: 1661329392664
+    lastmod: 1661408031565
     thumbnail: 8d82McTqkbP22t
     uid: 8d82McTqkbP22t
     backgroundColor: '#A63D26'
