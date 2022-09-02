@@ -2280,7 +2280,7 @@ templates:
     visible: true
     extends:
       cgroup: Player
-    lastmod: 1661327767257
+    lastmod: 1662092186670
     uid: LQkmMFJ13dFGQd
     playAnimationOnStart: false
     blendMode: normal
@@ -3579,7 +3579,7 @@ templates:
     visible: true
     extends:
       cgroup: Enemy
-    lastmod: 1661407688271
+    lastmod: 1662092472631
     uid: RMMGJ943W9Cn8d
     blendMode: normal
   - type: template
@@ -3597,7 +3597,7 @@ templates:
     texture: fWrrwB2WC86QGP
     visible: true
     extends: {}
-    lastmod: 1661241850362
+    lastmod: 1662091970475
     uid: C9rBT48pM4L6Rq
   - type: template
     name: gameOver
@@ -5791,7 +5791,7 @@ rooms:
         tiles: []
         extends: {}
     extends: {}
-    lastmod: 1661321989348
+    lastmod: 1662092301465
     thumbnail: m8BCFHLPQ4nt9n
     uid: m8BCFHLPQ4nt9n
     restrictCamera: false
@@ -9993,7 +9993,7 @@ rooms:
         uid: q5c9GWNFQLmMtz
         exts: {}
       - x: 704
-        'y': -1216
+        'y': -1215
         uid: L3gzJkJQP36FQm
         exts: {}
       - x: 1728
@@ -11140,8 +11140,8 @@ rooms:
         'y': -4270
         uid: 5t6QtkFJPfDrzG
         exts: {}
-      - x: 3867
-        'y': -4340
+      - x: 3850
+        'y': -4337
         uid: j7FnfbrKNQ5Mbd
         exts: {}
       - x: 3648
@@ -11472,10 +11472,6 @@ rooms:
         'y': -1216
         uid: wLJ43zDJThmrJK
         exts: {}
-      - x: 64
-        'y': 512
-        uid: LQkmMFJ13dFGQd
-        exts: {}
       - x: -896
         'y': -64
         uid: r8z1cq9zjLGQ1Q
@@ -11492,12 +11488,20 @@ rooms:
         'y': -3520
         uid: TNPcdddP3wnJ83
         exts: {}
+      - x: 128
+        'y': -1280
+        uid: wLJ43zDJThmrJK
+        exts: {}
+      - x: 128
+        'y': 512
+        uid: LQkmMFJ13dFGQd
+        exts: {}
     tiles:
       - depth: -10
         tiles: []
         extends: {}
     extends: {}
-    lastmod: 1661409091882
+    lastmod: 1662092928029
     thumbnail: jtp8fBQJtTn9zQ
     uid: jtp8fBQJtTn9zQ
   - type: room
@@ -12365,29 +12369,34 @@ scripts:
           room.crystals = 0;
           room.crystalsTotal = ct.templates.list['GreenCrystal'].length;
           room.kill = false;
+          room.immortal = false;
           ct.templates.copy('CrystalCounter', 0, 0);
           ct.templates.copy('HeartsWidget', 0, 0);
           ct.templates.copy('RingWidget', 0, 0);
       };
   - name: PlayerDead
     code: |-
-      var PlayerDead = function (player, ct) { 
-          ct.room.kill = true;
-          ct.sound.spawn('player_death');  
-          player.hspd = 0;
-          player.vspd = 0;
-          ct.camera.shake = 4;
-
-          player.x = player.savedX;
-          player.y = player.savedY; 
-
-           //отнять одну жизнь
-           ct.room.lives--;
+      var PlayerDead = function (player, ct) {     
+           if (ct.room.immortal == false) {
+              ct.room.kill = true;
+              ct.sound.spawn('player_death');  
+              player.hspd = 0;
+              player.vspd = 0;
+              ct.camera.shake = 4;
+              player.x = player.savedX;
+              player.y = player.savedY; 
+              //отнять одну жизнь
+              ct.room.lives--;
+               
+              ct.room.immortal = true;
+              ct.timer.add(4000, 'dead').then(() => {
+                  ct.room.immortal = false;
+              })
+           }
            if (ct.room.lives <= 0) {
                // Перезапустить комнату: перейти к комнате с текущим названием
                ct.rooms.switch(ct.room.name);
            }
-          
         
           return;
       };
